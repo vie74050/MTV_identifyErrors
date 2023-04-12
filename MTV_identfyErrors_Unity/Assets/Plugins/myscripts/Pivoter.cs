@@ -11,11 +11,12 @@ public class Pivoter : SO_linkedObject
 {
     public bool isOpen = false;
 
-    [Tooltip("this will att T to linked objects as well")]
+    [Tooltip("Items to rotate")]
     public PivotItem[] pvObjs;
 
     private float mouseDowndT = 0;
     private int mouseDowndT_limit = 30;
+    private bool initOpenState = false;
 
     void Awake()
     {
@@ -30,13 +31,14 @@ public class Pivoter : SO_linkedObject
             linkedObjects[i] = (pgo);
             i++;
         }
+        initOpenState = isOpen;
         //base.Init();       
     }
     public override void ResetPosition()
     {
         base.ResetPosition();
         
-        if (isOpen)
+        if (isOpen != initOpenState)
         {
             ToggleOpen();
         }
@@ -44,7 +46,7 @@ public class Pivoter : SO_linkedObject
     }
     public override bool IsTaskComplete()
     {
-        isTaskComplete = !isOpen;
+        isTaskComplete = isOpen != initOpenState;
 
         return base.IsTaskComplete();
     }

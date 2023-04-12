@@ -14,7 +14,6 @@ public class CamControls : MonoBehaviour
         camsettings = Camera.main.GetComponent<KGFOrbitCam>();
     }
 
-    
     void Update()
     {
         float z = camsettings.GetZoomCurrent();
@@ -40,17 +39,18 @@ public class CamControls : MonoBehaviour
             }
 
         }
-        
-        if ( (Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.LeftShift)) && Input.GetMouseButton(0)
+        /*      
+        if ( Input.GetMouseButton(0)
              || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.UpArrow)
              || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow)
             )
         {
-            camsettings.SetPanningEnable(true);
+            camsettings.SetPanningEnable(true); Debug.Log(Event.current);
         }
         else
         {
             camsettings.SetPanningEnable(false);
-        }
+        } */
     }
+   
 }

@@ -276,10 +276,10 @@ public class SelectableObject : MonoBehaviour
 
 	protected void OnMouseDrag()
 	{
-
+		camsettings.SetPanningEnable(false);
 		if (isDraggable)
 		{
-
+			
 			GameObject[] dragTagObjs = GameObject.FindGameObjectsWithTag(tag_drag);
 		
 			foreach (GameObject go in dragTagObjs)
@@ -337,7 +337,7 @@ public class SelectableObject : MonoBehaviour
 
 			SetFreezeRigidBody(true);
 		}
-			
+		camsettings.SetPanningEnable(true);
 	}
 
 	private void SetOrigMaterials()
