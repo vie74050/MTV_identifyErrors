@@ -1,0 +1,385 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.7f1 (240f4c1f462c) revision 2363212'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 65433 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.1.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/bcith/Documents/UnityProjects/NSPO - periop microcred/MTV_identifyErrors/MTV_identfyErrors_Unity
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59142
+Successfully changed project path to: C:/Users/bcith/Documents/UnityProjects/NSPO - periop microcred/MTV_identifyErrors/MTV_identfyErrors_Unity
+C:/Users/bcith/Documents/UnityProjects/NSPO - periop microcred/MTV_identifyErrors/MTV_identfyErrors_Unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 70.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.7f1 (240f4c1f462c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/bcith/Documents/UnityProjects/NSPO - periop microcred/MTV_identifyErrors/MTV_identfyErrors_Unity/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 with Max-Q Design (ID=0x1f10)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   31.0.15.1693
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.071564 seconds.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 145.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.463 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2465ms)
+		BeginReloadAssembly (184ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1713ms)
+			LoadAssemblies (188ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (517ms)
+				TypeCache.Initialize (515ms)
+					TypeCache.ScanAssembly (511ms)
+				ResolveRequiredComponents (2ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (889ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (215ms)
+				SetLoadedEditorAssemblies (32ms)
+				RefreshPlugins (145ms)
+				BeforeProcessingInitializeOnLoad (7ms)
+				ProcessInitializeOnLoadAttributes (348ms)
+				ProcessInitializeOnLoadMethodAttributes (142ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.012055 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.537 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3541ms)
+		BeginReloadAssembly (462ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (168ms)
+		EndReloadAssembly (2630ms)
+			LoadAssemblies (256ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (570ms)
+				TypeCache.Initialize (555ms)
+					TypeCache.ScanAssembly (547ms)
+				ResolveRequiredComponents (15ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (187ms)
+			SetupLoadedEditorAssemblies (1426ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (79ms)
+				SetLoadedEditorAssemblies (37ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (242ms)
+				ProcessInitializeOnLoadAttributes (923ms)
+				ProcessInitializeOnLoadMethodAttributes (98ms)
+				AfterProcessingInitializeOnLoad (43ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (45ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.26 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1770 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (50.4 KB). Loaded Objects now: 2238.
+Memory consumption went from 294.9 MB to 294.9 MB.
+Total: 89.081400 ms (FindLiveObjects: 0.609000 ms CreateObjectMapping: 0.524100 ms MarkObjects: 87.767700 ms  DeleteObjects: 0.176800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4081372.741369 seconds.
+  path: Assets/__SCENES__
+  artifactKey: Guid(54ddcb2069b6d8141a652acbf1435861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__ using Guid(54ddcb2069b6d8141a652acbf1435861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a402e161c53c26f6e5643d25b307229e') in 0.022443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.198903 seconds.
+  path: Assets/__SCENES__/Scenes
+  artifactKey: Guid(b07108e122a13644393844f0702ec892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/Scenes using Guid(b07108e122a13644393844f0702ec892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c6c25ee9ca60ae0dbe310c27f5c1491') in 0.003063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.677093 seconds.
+  path: Assets/__SCENES__/Scenes/MIS setup-free.unity
+  artifactKey: Guid(d56d5982e7ef6174ba911d3f9144dbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/Scenes/MIS setup-free.unity using Guid(d56d5982e7ef6174ba911d3f9144dbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d9c12499263edfa5fb2af5430bcea4') in 0.003109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 140.875810 seconds.
+  path: Assets/__SCENES__/Scenes/7250MayoTraySetup-free.unity
+  artifactKey: Guid(9a7c9e47981455640ba12d51cf81216b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/Scenes/7250MayoTraySetup-free.unity using Guid(9a7c9e47981455640ba12d51cf81216b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65de2921eef302809674f8f6af36d158') in 0.002610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.212775 seconds.
+  path: Assets/__SCENES__/Scenes/7250MayoTray-task.unity
+  artifactKey: Guid(29bbd8a9ef5507642b7a3f7dde24a66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/Scenes/7250MayoTray-task.unity using Guid(29bbd8a9ef5507642b7a3f7dde24a66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8489e7c049f94dc96c29e78fdb813f5') in 0.001862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.259748 seconds.
+  path: Assets/__SCENES__/Scenes/MIS setup-1 ports bckup 2.unity
+  artifactKey: Guid(b01475806c5268845a90409945037466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/Scenes/MIS setup-1 ports bckup 2.unity using Guid(b01475806c5268845a90409945037466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc40ed79afb0ad0bf8d1c846893a2449') in 0.001805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.374455 seconds.
+  path: Assets/__SCENES__/Scenes/MIS setup-3 cords and tubes.unity
+  artifactKey: Guid(50c7d0bf1593a674ca8e80f6b12e9e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/Scenes/MIS setup-3 cords and tubes.unity using Guid(50c7d0bf1593a674ca8e80f6b12e9e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8e67ab56ccc248a7a4b791de8c3f832') in 0.002192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.610287 seconds.
+  path: Assets/__SCENES__/Scenes/MIS setup-2 position.unity
+  artifactKey: Guid(92aa08b7883321b4082e00cfcc65291b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/Scenes/MIS setup-2 position.unity using Guid(92aa08b7883321b4082e00cfcc65291b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa54399169b109ce720e952115e95ff') in 0.002587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 78.318556 seconds.
+  path: Assets/__SCENES__/FBX/FBX
+  artifactKey: Guid(26bda55512085d44cb3e2de9f7a6343f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX using Guid(26bda55512085d44cb3e2de9f7a6343f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ccaac2005eaae25660c3a3bdd232914') in 0.002231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.061400 seconds.
+  path: Assets/__SCENES__/FBX/FBX/5mmPort.FBX
+  artifactKey: Guid(3fa16acba7b85ff46b201d37b8a18285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/5mmPort.FBX using Guid(3fa16acba7b85ff46b201d37b8a18285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51af8e598406365698fa68f4760b0463') in 1.396341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/__SCENES__/FBX/FBX/BackTable.FBX
+  artifactKey: Guid(ca8db5a852046a4429ca98decc5a9424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/BackTable.FBX using Guid(ca8db5a852046a4429ca98decc5a9424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5bd91e776602df24c4483f1926ce84b') in 0.398868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/__SCENES__/FBX/FBX/AllisForcep.FBX
+  artifactKey: Guid(5766256c547d69f44900f610d92d8bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/AllisForcep.FBX using Guid(5766256c547d69f44900f610d92d8bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8010b14a2d3ca4d6ace39c8f589a5e1b') in 0.034935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/__SCENES__/FBX/FBX/LaparoscopicSuctionTip.FBX
+  artifactKey: Guid(b77b3fd0f9ed15e40a8e900b681fd516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/LaparoscopicSuctionTip.FBX using Guid(b77b3fd0f9ed15e40a8e900b681fd516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db926388fc91282f7b7209b1321d8500') in 0.021443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/__SCENES__/FBX/FBX/IVPumpPropofolGroup.FBX
+  artifactKey: Guid(4081120a4b21bf941b8f0613214cb746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/IVPumpPropofolGroup.FBX using Guid(4081120a4b21bf941b8f0613214cb746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b582fc0f81b8e98fe0a229718a214aaf') in 0.449886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/__SCENES__/FBX/FBX/CurvedMayoScissors.FBX
+  artifactKey: Guid(361426a546bfe0344813ab50285e9bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/CurvedMayoScissors.FBX using Guid(361426a546bfe0344813ab50285e9bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd84defe876208c7192daf2a3de4dcb58') in 0.040116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/__SCENES__/FBX/FBX/MajorLaparoscopicSetInsideInstrumentRack.FBX
+  artifactKey: Guid(d0bb4518dbeb2744780b7115b7a1e474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/MajorLaparoscopicSetInsideInstrumentRack.FBX using Guid(d0bb4518dbeb2744780b7115b7a1e474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5985dd41ab3f4291e45856ca98df4bf7') in 0.020523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/__SCENES__/FBX/FBX/IVBagDrip.FBX
+  artifactKey: Guid(ad1a915da89bb834ebadab16a05b5d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/IVBagDrip.FBX using Guid(ad1a915da89bb834ebadab16a05b5d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ff3bd3903aa104928059074fe6aded') in 0.192292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/__SCENES__/FBX/FBX/FiberOpticLightcord.FBX
+  artifactKey: Guid(8fd549a9e7c2e994d905fd9840bcf0fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/FiberOpticLightcord.FBX using Guid(8fd549a9e7c2e994d905fd9840bcf0fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7303aef16a317e3dc06d9cdc73abf620') in 0.091251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/__SCENES__/FBX/FBX/MayoStand.FBX
+  artifactKey: Guid(11b8633bad53dd543a3336548225fb0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/MayoStand.FBX using Guid(11b8633bad53dd543a3336548225fb0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b1d8632c4511ab075d332835929d436') in 0.028147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/__SCENES__/FBX/FBX/BluntSennRetractor.FBX
+  artifactKey: Guid(ffaeb3827aae4c64fa535f1e675475bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/BluntSennRetractor.FBX using Guid(ffaeb3827aae4c64fa535f1e675475bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfcf0fb7b00f313be2f778dab741ae68') in 0.017883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/__SCENES__/FBX/FBX/TissueForceps.FBX
+  artifactKey: Guid(1d893fa7a67edd64ea97d7ffa6a9be34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/TissueForceps.FBX using Guid(1d893fa7a67edd64ea97d7ffa6a9be34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '339fade25a2575a369b7d2ae17be8ca6') in 0.053525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/__SCENES__/FBX/FBX/CauteryMachine.FBX
+  artifactKey: Guid(4bfd3fc3b533e6f4094dff1d85499258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/CauteryMachine.FBX using Guid(4bfd3fc3b533e6f4094dff1d85499258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e9930cb2079e8c798ea99a59061229a') in 0.029381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/__SCENES__/FBX/FBX/RandallStoneForcep.FBX
+  artifactKey: Guid(82954bf619cf39544a73484dd1824a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/RandallStoneForcep.FBX using Guid(82954bf619cf39544a73484dd1824a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7656cba66db1c4ca59a4e2b17c33c168') in 0.047322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/__SCENES__/FBX/FBX/LaparoscopeCord.FBX
+  artifactKey: Guid(a14de40f40d7d934cab0362ea6d8d85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/LaparoscopeCord.FBX using Guid(a14de40f40d7d934cab0362ea6d8d85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d2d52a555d77d17b38c8a2556b5da4') in 0.041918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/__SCENES__/FBX/FBX/LaparoscopicAtraumaticGrasper.FBX
+  artifactKey: Guid(288aac73304b716408def153d2bb65b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/LaparoscopicAtraumaticGrasper.FBX using Guid(288aac73304b716408def153d2bb65b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fff3f29d3b2b2cf67c097320ae021ab') in 0.453083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/__SCENES__/FBX/FBX/LagenbackRetractor.FBX
+  artifactKey: Guid(a7d9ab1fb3d1fb1448cc9912c93c40c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/LagenbackRetractor.FBX using Guid(a7d9ab1fb3d1fb1448cc9912c93c40c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c936af1f51c3c222bd9a0d2eb5ec9a1c') in 0.019453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/__SCENES__/FBX/FBX/LaparoscopicCauteryCord.FBX
+  artifactKey: Guid(cd8ff64980c0fb14aaccb1050f4444a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/LaparoscopicCauteryCord.FBX using Guid(cd8ff64980c0fb14aaccb1050f4444a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dff5ef48e9bbe874aeffb3a88080506') in 0.051736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/__SCENES__/FBX/FBX/LaparoscopicMotherInLaw.FBX
+  artifactKey: Guid(389e85592f9df144f88388361664847f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/LaparoscopicMotherInLaw.FBX using Guid(389e85592f9df144f88388361664847f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632c357edbc5b7535e5c69c1c7d3c6d1') in 0.053900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/__SCENES__/FBX/FBX/LaparoscopicLower.FBX
+  artifactKey: Guid(e68e97d0e57ca864fac323e310742ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/LaparoscopicLower.FBX using Guid(e68e97d0e57ca864fac323e310742ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2761d7b3e6c19ec485a35b8b6b36c141') in 0.092719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/__SCENES__/FBX/FBX/ScalpelHandleSize3.FBX
+  artifactKey: Guid(36fff1b7627687f4598345ed20ec450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/ScalpelHandleSize3.FBX using Guid(36fff1b7627687f4598345ed20ec450a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd863a57df3ebb35a71b43b893e5911e2') in 0.039288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/__SCENES__/FBX/FBX/OpenedSterileWrappedCamera.FBX
+  artifactKey: Guid(8650e845f643db04c9cb19b213c0ab2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/OpenedSterileWrappedCamera.FBX using Guid(8650e845f643db04c9cb19b213c0ab2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f187a90565b8143497972e15cd2d777') in 0.045225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/__SCENES__/FBX/FBX/BackTableItems.FBX
+  artifactKey: Guid(4586fd2591b5d98408275d8cd373ae96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/BackTableItems.FBX using Guid(4586fd2591b5d98408275d8cd373ae96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a57ecd64c9e78fecd3355c112ea47a53') in 0.149465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/__SCENES__/FBX/FBX/LaparoscopicTower.FBX
+  artifactKey: Guid(d7788ac30d5c8fd48963194a97dd30aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/LaparoscopicTower.FBX using Guid(d7788ac30d5c8fd48963194a97dd30aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79334f1dfd8eb205986c22ad2c1e4765') in 0.123871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/__SCENES__/FBX/FBX/Laparoscope.FBX
+  artifactKey: Guid(c927d4cb1b7d7234b93870a985887cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/__SCENES__/FBX/FBX/Laparoscope.FBX using Guid(c927d4cb1b7d7234b93870a985887cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4db04887ed2ddf8e3a787b8b1d2e642a') in 0.092283 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

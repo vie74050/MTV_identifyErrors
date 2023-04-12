@@ -1,0 +1,365 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1000013587839766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4000012419365488}
+  - component: {fileID: 108000013072685560}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000012419365488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013587839766}
+  m_LocalRotation: {x: -0.111074165, y: 0.11438136, z: 0.20238182, w: 0.96624064}
+  m_LocalPosition: {x: -10.1, y: -12.48, z: 9.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4000012283359366}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -15.126, y: 10.51, z: 22.26}
+--- !u!108 &108000013072685560
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013587839766}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 0.501
+    m_Bias: 0
+    m_NormalBias: 0
+    m_NearPlane: 0.1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &1000013664935458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4000012283359366}
+  - component: {fileID: 20000011047710160}
+  - component: {fileID: 114000011917939662}
+  - component: {fileID: 8013182541263758993}
+  - component: {fileID: 114693235227963944}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000012283359366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013664935458}
+  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
+  m_LocalPosition: {x: 0, y: 6.9430094, z: -19.07576}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4000012419365488}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+--- !u!20 &20000011047710160
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013664935458}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.048575014, g: 0.06686485, b: 0.10377127, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_GateFitMode: 2
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 300
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967039
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!114 &114000011917939662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013664935458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71035e6537a7f44b9afb1c631fc98928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itsTarget:
+    itsTarget: {fileID: 0}
+    itsFollowPosition: 1
+    itsPositionSpeed: 2
+    itsFollowRotation: 1
+    itsRotationSpeed: 2
+  itsZoom:
+    itsEnable: 1
+    itsStartValue: 24
+    itsUseLimits: 1
+    itsMinLimit: 1.5
+    itsMaxLimit: 30
+    itsZoomSpeed: 10
+    itsControls:
+    - itsAxisName: Mouse ScrollWheel
+      itsAxisSensitivity: 5
+      itsInvertAxis: 1
+      itsAdditionalKey: 0
+      itsAdditionalMouseButton: -10
+      itsResetRotationOnRelease: 0
+    itsControlTouch:
+      itsSensitivity: 1
+      itsInvertAxis: 0
+  itsRotation:
+    itsHorizontal:
+      itsEnable: 1
+      itsStartValue: 270
+      itsUseLimits: 1
+      itsLeftLimit: 90
+      itsRightLimit: 90
+      itsControls:
+      - itsAxisName: Mouse X
+        itsAxisSensitivity: 1
+        itsInvertAxis: 0
+        itsAdditionalKey: 0
+        itsAdditionalMouseButton: 1
+        itsResetRotationOnRelease: 0
+      - itsAxisName: Horizontal
+        itsAxisSensitivity: 1
+        itsInvertAxis: 0
+        itsAdditionalKey: 97
+        itsAdditionalMouseButton: 1
+        itsResetRotationOnRelease: 0
+      - itsAxisName: Horizontal
+        itsAxisSensitivity: 1
+        itsInvertAxis: 0
+        itsAdditionalKey: 100
+        itsAdditionalMouseButton: 1
+        itsResetRotationOnRelease: 0
+      itsControlTouch:
+        itsNumberOfTouches: 0
+        itsSensitivity: 1
+        itsInvertAxis: 0
+    itsVertical:
+      itsEnable: 1
+      itsStartValue: 60
+      itsUseLimits: 1
+      itsUpLimit: 25
+      itsDownLimit: 70
+      itsControls:
+      - itsAxisName: Mouse Y
+        itsAxisSensitivity: 1
+        itsInvertAxis: 1
+        itsAdditionalKey: 0
+        itsAdditionalMouseButton: 1
+        itsResetRotationOnRelease: 0
+      itsControlTouch:
+        itsNumberOfTouches: 0
+        itsSensitivity: 1
+        itsInvertAxis: 0
+  itsPanning:
+    itsBounds: {fileID: 0}
+    itsSpeed: 10
+    itsUseCameraSpace: 1
+    itsLeftRight:
+      itsEnable: 0
+      itsControls:
+      - itsAxisName: Mouse X
+        itsAxisSensitivity: 0.5
+        itsInvertAxis: 1
+        itsAdditionalKey: 0
+        itsAdditionalMouseButton: 0
+        itsResetRotationOnRelease: 0
+      - itsAxisName: Horizontal
+        itsAxisSensitivity: 0.1
+        itsInvertAxis: 1
+        itsAdditionalKey: 276
+        itsAdditionalMouseButton: 0
+        itsResetRotationOnRelease: 0
+      - itsAxisName: Horizontal
+        itsAxisSensitivity: 0.1
+        itsInvertAxis: 1
+        itsAdditionalKey: 275
+        itsAdditionalMouseButton: 0
+        itsResetRotationOnRelease: 0
+      - itsAxisName: Mouse X
+        itsAxisSensitivity: 0.5
+        itsInvertAxis: 1
+        itsAdditionalKey: 0
+        itsAdditionalMouseButton: 2
+        itsResetRotationOnRelease: 0
+      itsControlTouch:
+        itsNumberOfTouches: 0
+        itsSensitivity: 1
+        itsInvertAxis: 0
+    itsForwardBackward:
+      itsEnable: 0
+      itsControls: []
+      itsControlTouch:
+        itsNumberOfTouches: 0
+        itsSensitivity: 1
+        itsInvertAxis: 0
+    itsUpDown:
+      itsEnable: 1
+      itsControls:
+      - itsAxisName: Mouse Y
+        itsAxisSensitivity: 0.5
+        itsInvertAxis: 1
+        itsAdditionalKey: 0
+        itsAdditionalMouseButton: 0
+        itsResetRotationOnRelease: 0
+      - itsAxisName: Vertical
+        itsAxisSensitivity: 0.1
+        itsInvertAxis: 1
+        itsAdditionalKey: 273
+        itsAdditionalMouseButton: 0
+        itsResetRotationOnRelease: 0
+      - itsAxisName: Vertical
+        itsAxisSensitivity: 0.1
+        itsInvertAxis: 1
+        itsAdditionalKey: 274
+        itsAdditionalMouseButton: 0
+        itsResetRotationOnRelease: 0
+      - itsAxisName: Mouse Y
+        itsAxisSensitivity: 0.5
+        itsInvertAxis: 1
+        itsAdditionalKey: 0
+        itsAdditionalMouseButton: 2
+        itsResetRotationOnRelease: 0
+      itsControlTouch:
+        itsNumberOfTouches: 0
+        itsSensitivity: 1
+        itsInvertAxis: 0
+  itsEnvironment:
+    itsFollowGround: 0
+    itsTestCollisions: 0
+    itsCollisionLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    itsCollisionOffset: 0.1
+  itsLookat:
+    itsEnable: 0
+    itsLookatTarget: {fileID: 0}
+    itsUpVectorSource: {fileID: 0}
+    itsLookatSpeed: 2
+    itsHardLinkToTarget: 0
+  itsCamera:
+    itsCamera: {fileID: 0}
+    itsFieldOfView: 60
+  itsGlobalSettings:
+    itsSoftLimitsEnable: 0
+    itsSoftLimitCorrectionSpeed: 1
+--- !u!114 &8013182541263758993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013664935458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e553bda8e1cd2cc43ae4b321ffbaf537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyZoomIn: 119
+  keyZoomOut: 115
+--- !u!114 &114693235227963944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013664935458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ef3ec7f7de64923aeccd08548f0301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _MODEL: {fileID: 0}
+  snapbackDist: 1
+  showlabels: 1
+  showPartsList: 1
+  selectedColor: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 0.019607844}
+  showAlphaMode: 1
+  alphaMode: 0
+  logo: {fileID: 2800000, guid: fad81f7f25ac94e6a9be45756bc40a9c, type: 3}
+  activityList: []
+  taskItems: []
+  TargetEndPos: {fileID: 0}
+  showActivity: 0
+  showActivitySteps: 1
+  showLogBtn: 1
+  activityTaskName: 
+  currentSelection: {fileID: 0}
+  sceneNames: []

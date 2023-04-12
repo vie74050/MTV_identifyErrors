@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: 8986431e48c2d984aa9bf8ec202a9089
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Blue
+    100002: Green
+    100004: Latch01
+    100006: latch02
+    100008: //RootNode
+    100010: MinorLaparoscopicSetBasket
+    100012: MinorLaparoscopicSetLid
+    100014: MinorLaparoscopicSetOuterPan
+    400000: Blue
+    400002: Green
+    400004: Latch01
+    400006: latch02
+    400008: //RootNode
+    400010: MinorLaparoscopicSetBasket
+    400012: MinorLaparoscopicSetLid
+    400014: MinorLaparoscopicSetOuterPan
+    2300000: Blue
+    2300002: Green
+    2300004: Latch01
+    2300006: latch02
+    2300008: MinorLaparoscopicSetBasket
+    2300010: MinorLaparoscopicSetLid
+    2300012: MinorLaparoscopicSetOuterPan
+    3300000: Blue
+    3300002: Green
+    3300004: Latch01
+    3300006: latch02
+    3300008: MinorLaparoscopicSetBasket
+    3300010: MinorLaparoscopicSetLid
+    3300012: MinorLaparoscopicSetOuterPan
+    4300000: MinorLaparoscopicSetBasket
+    4300002: Green
+    4300004: Blue
+    4300006: MinorLaparoscopicSetLid
+    4300008: MinorLaparoscopicSetOuterPan
+    4300010: latch02
+    4300012: Latch01
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BasketLid
+    second: {fileID: 2100000, guid: 75ac6eb3d6841404385bf308fb77d105, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackPlastic
+    second: {fileID: 2100000, guid: 765582eab6efb00408b895f87715faab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BluePlastic
+    second: {fileID: 2100000, guid: 1b017696821c831489076622d04e44d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome
+    second: {fileID: 2100000, guid: 93f416829cf787b4fb2203ffee3c2b0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GreenPlastic
+    second: {fileID: 2100000, guid: 2520f9394b97d01459842f8a8ea0daa4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MinorLaparoscopicSetBasket
+    second: {fileID: 2100000, guid: d87ff68c513f0074685eabdea770c217, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NonWovenFabric
+    second: {fileID: 2100000, guid: 596dfcba4cbface40a79bb0c6915d45b, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BasketLid
+    second: {fileID: 2800000, guid: 8bcc76f4742acc540b0203aeb290a115, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BasketLid_A
+    second: {fileID: 2800000, guid: 36db42721f21db843b447b0605be7aa9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BasketLid_S
+    second: {fileID: 2800000, guid: 69261953e6da56646990d88527866ca4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LaparoscopicBasketAlpha
+    second: {fileID: 2800000, guid: 2641a62332fe9884ea7f420081779e9c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: NonWovenFabric
+    second: {fileID: 2800000, guid: 51cc69a8f3a36db4091326d0dc7261f9, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 12
+    meshCompression: 2
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

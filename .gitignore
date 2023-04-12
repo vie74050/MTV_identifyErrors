@@ -1,0 +1,10 @@
+[Ll]ibrary/
+[Ll]ogs/
+Temp/
+obj/
+UserSettings/
+SwitchIL2CPPCache /
+SwitchIL2CPPStats /
+.vs/
+*.csproj
+*.sln
