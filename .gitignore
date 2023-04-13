@@ -1,5 +1,5 @@
 [Ll]ibrary/
-[Ll]ogs/
+Logs/
 Temp/
 obj/
 UserSettings/
@@ -8,3 +8,5 @@ SwitchIL2CPPStats /
 .vs/
 *.csproj
 *.sln
+MTV_identfyErrors_Unity/Logs/
+MTV_identfyErrors_Unity/UserSettings/Layouts/

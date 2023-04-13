@@ -10,11 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 56b25c243cfff804d8a3e06c8fe39a9b, type: 3}
       propertyPath: m_Name
-      value: NeedleDriver
+      value: NeedleDriver Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 56b25c243cfff804d8a3e06c8fe39a9b, type: 3}
+      propertyPath: m_TagString
+      value: Draggable
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 56b25c243cfff804d8a3e06c8fe39a9b, type: 3}
       propertyPath: m_RootOrder
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 56b25c243cfff804d8a3e06c8fe39a9b, type: 3}
       propertyPath: m_LocalPosition.x
