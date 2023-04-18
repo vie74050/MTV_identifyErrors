@@ -15,7 +15,7 @@ public class Pivoter : SO_linkedObject
     public PivotItem[] pvObjs;
 
     private float mouseDowndT = 0;
-    private int mouseDowndT_limit = 30;
+    private int mouseDowndT_limit = 10;
     private bool initOpenState = false;
 
     void Awake()

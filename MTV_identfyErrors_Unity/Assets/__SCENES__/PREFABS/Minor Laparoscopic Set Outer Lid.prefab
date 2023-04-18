@@ -235,7 +235,8 @@ GameObject:
   - component: {fileID: 4238564444020873147}
   - component: {fileID: 4238564444020873145}
   - component: {fileID: 4238564444020873144}
-  - component: {fileID: 4238564444020873150}
+  - component: {fileID: 691756096311400863}
+  - component: {fileID: 6533502239716010236}
   m_Layer: 0
   m_Name: Latch 02
   m_TagString: Untagged
@@ -308,7 +309,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4238564444020873150
+--- !u!114 &691756096311400863
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -317,21 +318,45 @@ MonoBehaviour:
   m_GameObject: {fileID: 4238564444020873146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
+  m_Script: {fileID: 11500000, guid: ac9bbcbbd192cd2428abafa3887fe264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 0
   alphaMode: 0
   highlighColour: {r: 0, g: 0, b: 0, a: 0}
-  snapbackDistMin: 5
+  snapbackDistMin: 0
   snapbackDistMax: 15
   snaptoTarget: 0
   isDraggable: 0
-  isListItem: 0
+  isListItem: 1
   targetPos: {x: 0, y: 10000, z: 0}
   isTaskComplete: 0
   screenPoint: {x: 0, y: 0, z: 0}
   distFromCam: 5
+  linkedObjects: []
+  isOpen: 0
+  pvObjs:
+  - max: 270
+    t: {fileID: 4238564444020873147}
+    pivot: {fileID: 0}
+    rotaxis: {x: 0, y: 1, z: 0}
+  - max: 180
+    t: {fileID: 0}
+    pivot: {fileID: 0}
+    rotaxis: {x: 0, y: 1, z: 0}
+--- !u!65 &6533502239716010236
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4238564444020873146}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.8, z: 0.4}
+  m_Center: {x: 0.22, y: 0, z: 0}
 --- !u!1 &4238564444670538729
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,9 +366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4238564444670538734}
-  - component: {fileID: 4238564444670538706}
   - component: {fileID: 4238564444670538733}
-  - component: {fileID: 4238564444670538732}
   - component: {fileID: 4238564444670538735}
   m_Layer: 0
   m_Name: Minor Laparoscopic Set Outer Lid
@@ -370,16 +393,8 @@ Transform:
   - {fileID: 4238564444020873147}
   - {fileID: 4238564445310935723}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4238564444670538706
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4238564444670538729}
-  m_Mesh: {fileID: 4300006, guid: 8986431e48c2d984aa9bf8ec202a9089, type: 3}
 --- !u!65 &4238564444670538733
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -391,52 +406,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.562211, y: 2.7998397, z: 0.33402202}
-  m_Center: {x: 0, y: 0.0000004768372, z: 1.0003366}
---- !u!23 &4238564444670538732
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4238564444670538729}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 75ac6eb3d6841404385bf308fb77d105, type: 2}
-  - {fileID: 2100000, guid: 596dfcba4cbface40a79bb0c6915d45b, type: 2}
-  - {fileID: 2100000, guid: 93f416829cf787b4fb2203ffee3c2b0b, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
+  m_Size: {x: 4.562211, y: 2.7998397, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 1}
 --- !u!114 &4238564444670538735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,7 +458,8 @@ GameObject:
   - component: {fileID: 4238564444754475015}
   - component: {fileID: 4238564444754475013}
   - component: {fileID: 4238564444754475012}
-  - component: {fileID: 4238564444754475018}
+  - component: {fileID: 1887092913118317031}
+  - component: {fileID: 1131038866679847248}
   m_Layer: 0
   m_Name: Latch 01
   m_TagString: Untagged
@@ -560,7 +532,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4238564444754475018
+--- !u!114 &1887092913118317031
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -569,21 +541,45 @@ MonoBehaviour:
   m_GameObject: {fileID: 4238564444754475014}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
+  m_Script: {fileID: 11500000, guid: ac9bbcbbd192cd2428abafa3887fe264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 0
   alphaMode: 0
   highlighColour: {r: 0, g: 0, b: 0, a: 0}
-  snapbackDistMin: 5
+  snapbackDistMin: 0
   snapbackDistMax: 15
   snaptoTarget: 0
   isDraggable: 0
-  isListItem: 0
+  isListItem: 1
   targetPos: {x: 0, y: 10000, z: 0}
   isTaskComplete: 0
   screenPoint: {x: 0, y: 0, z: 0}
   distFromCam: 5
+  linkedObjects: []
+  isOpen: 0
+  pvObjs:
+  - max: 90
+    t: {fileID: 4238564444754475015}
+    pivot: {fileID: 0}
+    rotaxis: {x: 0, y: 1, z: 0}
+  - max: 180
+    t: {fileID: 0}
+    pivot: {fileID: 0}
+    rotaxis: {x: 0, y: 1, z: 0}
+--- !u!65 &1131038866679847248
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4238564444754475014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.8, z: 0.4}
+  m_Center: {x: 0.22, y: 0, z: 0}
 --- !u!1 &4238564445310935722
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,8 +674,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 75ac6eb3d6841404385bf308fb77d105, type: 2}
-  - {fileID: 2100000, guid: 3f6c230916d6e4450a0a6fc03a0296ef, type: 2}
-  - {fileID: 2100000, guid: 93f416829cf787b4fb2203ffee3c2b0b, type: 2}
+  - {fileID: 2100000, guid: 74610d3bf6e054b4abba8e5627784997, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

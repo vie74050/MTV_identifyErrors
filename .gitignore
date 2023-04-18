@@ -3,10 +3,10 @@ Logs/
 Temp/
 obj/
 UserSettings/
+Layouts/
 SwitchIL2CPPCache /
 SwitchIL2CPPStats /
 .vs/
 *.csproj
 *.sln
-MTV_identfyErrors_Unity/Logs/
-MTV_identfyErrors_Unity/UserSettings/Layouts/
+*.log

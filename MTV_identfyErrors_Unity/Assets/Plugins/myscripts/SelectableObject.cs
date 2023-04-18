@@ -115,7 +115,7 @@ public class SelectableObject : MonoBehaviour
 	void Update()
 	{
 		float speed = 10f;
-		if (snaptoTarget && !ao.animOverride)
+		if (snaptoTarget && !ao.animOverride && isTaskComplete)
 		{
 
 			transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
