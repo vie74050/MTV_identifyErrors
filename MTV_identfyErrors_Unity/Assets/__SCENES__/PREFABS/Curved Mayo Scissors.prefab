@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3247597587155714321}
   - component: {fileID: 3247597587156517173}
   - component: {fileID: 3247597587157484533}
-  - component: {fileID: 2852607462175173967}
   m_Layer: 0
   m_Name: Curved Mayo Scissors R
   m_TagString: Untagged
@@ -84,30 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2852607462175173967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3247597587155557681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSelected: 0
-  alphaMode: 0
-  highlighColour: {r: 0, g: 0, b: 0, a: 0}
-  snapbackDistMin: 5
-  snapbackDistMax: 15
-  snaptoTarget: 0
-  isDraggable: 0
-  isListItem: 0
-  targetPos: {x: 0, y: 10000, z: 0}
-  isTaskComplete: 0
-  screenPoint: {x: 0, y: 0, z: 0}
-  distFromCam: 5
 --- !u!1 &3247597587155557687
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +94,6 @@ GameObject:
   - component: {fileID: 3247597587155714327}
   - component: {fileID: 3247597587156517179}
   - component: {fileID: 3247597587157484539}
-  - component: {fileID: 2384800593186789795}
   m_Layer: 0
   m_Name: Curved Mayo Scissors L
   m_TagString: Untagged
@@ -192,30 +166,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2384800593186789795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3247597587155557687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isSelected: 0
-  alphaMode: 0
-  highlighColour: {r: 0, g: 0, b: 0, a: 0}
-  snapbackDistMin: 5
-  snapbackDistMax: 15
-  snaptoTarget: 0
-  isDraggable: 0
-  isListItem: 0
-  targetPos: {x: 0, y: 10000, z: 0}
-  isTaskComplete: 0
-  screenPoint: {x: 0, y: 0, z: 0}
-  distFromCam: 5
 --- !u!1 &3247597587155557695
 GameObject:
   m_ObjectHideFlags: 0

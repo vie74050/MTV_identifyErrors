@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 2913059008862065262}
   - component: {fileID: 998812079570865340}
   - component: {fileID: 7382684335744143744}
+  - component: {fileID: 1456287355875942605}
   m_Layer: 0
   m_Name: PlasticLock_2
   m_TagString: Untagged
@@ -249,3 +250,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1456287355875942605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7454615591738688136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
+  alphaMode: 0
+  highlighColour: {r: 0, g: 0, b: 0, a: 0}
+  snapbackDistMin: 5
+  snapbackDistMax: 15
+  snaptoTarget: 0
+  isDraggable: 0
+  isListItem: 0
+  targetPos: {x: 0, y: 10000, z: 0}
+  isTaskComplete: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  distFromCam: 5
