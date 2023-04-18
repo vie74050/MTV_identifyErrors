@@ -53,7 +53,7 @@ public class Pivoter : SO_linkedObject
     private new void OnMouseDrag()
     {
         mouseDowndT++;
-        if (mouseDowndT >= mouseDowndT_limit)
+        if (gameObject.tag == "Draggable")
         {
             base.OnMouseDrag();
 
