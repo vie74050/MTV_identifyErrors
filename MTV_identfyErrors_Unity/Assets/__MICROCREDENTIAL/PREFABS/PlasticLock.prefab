@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 333200342}
   - component: {fileID: 333200341}
   m_Layer: 0
-  m_Name: PlasticLock 01 Variant
+  m_Name: PlasticLock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
