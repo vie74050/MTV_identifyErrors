@@ -39,6 +39,7 @@
      <Compile Include="Assets\Plugins\kolmich\KGFCore\KGFUtility\scripts\KGFUtility.cs" />
      <Compile Include="Assets\Plugins\myscripts\Drop scripts\IDropHandler.cs" />
      <Compile Include="Assets\Plugins\kolmich\KGFCore\KGFUtility\scripts\KGF\Threading\Dispatcher.cs" />
+     <Compile Include="Assets\Plugins\myscripts\TriggerAnim_linkedObject.cs" />
      <Compile Include="Assets\Plugins\kolmich\KGFCore\KGFGUIUtility\scripts\KGFGUIUtility.cs" />
      <Compile Include="Assets\Plugins\kolmich\KGFCore\KGFCustomGUI\scripts\interfaces\KGFICustomInspectorGUI.cs" />
      <Compile Include="Assets\Plugins\kolmich\KGFCore\KGFEvent\scripts\KGFEvent.cs" />
@@ -47,7 +48,6 @@
      <Compile Include="Assets\Plugins\kolmich\KGFCore\KGFEvent\scripts\KGFEventBase.cs" />
      <Compile Include="Assets\Plugins\kolmich\KGFCore\KGFGUIUtility\scripts\controls\KGFGUIObjectList.cs" />
      <Compile Include="Assets\Plugins\kolmich\KGFCore\KGFCustomGUI\scripts\KGFCustomGUI.cs" />
-     <Compile Include="Assets\Plugins\myscripts\Activity.cs" />
      <Compile Include="Assets\Plugins\kolmich\KGFCore\scripts\KGFString.cs" />
      <Compile Include="Assets\Plugins\myscripts\Drop scripts\Dropable.cs" />
      <Compile Include="Assets\Plugins\kolmich\KGFCore\scripts\KGFDocumentation.cs" />

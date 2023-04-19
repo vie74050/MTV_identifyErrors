@@ -175,8 +175,9 @@ public class SelectableObject : MonoBehaviour
 		ChangeMaterialColor("select");
 		isSelected = true;
 
-		if (isDraggable) 
+		if (isDraggable) {
 			gameObject.tag = tag_drag;
+		}
 
 		// broadcast to web container -- as of Unity 5.6 legacy way
 		if (Application.platform == RuntimePlatform.WebGLPlayer && isListItem)

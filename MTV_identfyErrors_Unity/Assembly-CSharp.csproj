@@ -40,9 +40,7 @@
      <Compile Include="Assets\Helpers\CombineChildrenExtended.cs" />
      <Compile Include="Assets\Helpers\MeshCombineUtility.cs" />
      <Compile Include="Assets\Helpers\MergeSubMeshes.cs" />
-     <Compile Include="Assets\Helpers\TriggerAnim_linkedObject.cs" />
      <Compile Include="Assets\Helpers\alphaModeViewer.cs" />
-     <Compile Include="Assets\Helpers\NewBehaviourScript.cs" />
      <None Include="Assets\Resources\materials and shaders\Double Sided Shaders\Double Sided Transparent Diffuse Bump.shader" />
      <None Include="Assets\Resources\materials and shaders\Double Sided Shaders\Double Sided Emissive Diffuse.shader" />
      <None Include="Assets\Resources\materials and shaders\OutlineSilhouetteDiffuse.shader" />
