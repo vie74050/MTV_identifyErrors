@@ -173,8 +173,10 @@ public class SelectableObject : MonoBehaviour
 				
 		//Debug.Log ("changed - select" + transform.name);
 		ChangeMaterialColor("select");
-		gameObject.tag = tag_drag;
 		isSelected = true;
+
+		if (isDraggable) 
+			gameObject.tag = tag_drag;
 
 		// broadcast to web container -- as of Unity 5.6 legacy way
 		if (Application.platform == RuntimePlatform.WebGLPlayer && isListItem)
@@ -223,7 +225,7 @@ public class SelectableObject : MonoBehaviour
 	}
 	protected void OnMouseDown()
 	{
-		if (!alphaMode)
+		if (!alphaMode && isDraggable)
 		{
 			GameObject[] dragTagObjs = GameObject.FindGameObjectsWithTag(tag_drag);
 

@@ -39,18 +39,16 @@ public class CamControls : MonoBehaviour
             }
 
         }
-        /*      
-        if ( Input.GetMouseButton(0)
+        GameObject[] dragTagObjs = GameObject.FindGameObjectsWithTag("Draggable");
+
+        if ( dragTagObjs.Length ==0
              || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.UpArrow)
              || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow)
             )
         {
-            camsettings.SetPanningEnable(true); Debug.Log(Event.current);
+            camsettings.SetPanningEnable(true);
         }
-        else
-        {
-            camsettings.SetPanningEnable(false);
-        } */
+       
     }
    
 }
