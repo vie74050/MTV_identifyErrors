@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /** Extends Selectable Object: add click to pivot specified items about {axis}, {point}
  *  - distinguish between click to toggle pivot items vs base select/drag by mousedown duration
@@ -15,7 +13,7 @@ public class Pivoter : SO_linkedObject
     public PivotItem[] pvObjs;
 
     private float mouseDowndT = 0;
-    private int mouseDowndT_limit = 10;
+    private int mouseDowndT_limit = 30;
     private bool initOpenState = false;
 
     void Awake()
@@ -63,6 +61,7 @@ public class Pivoter : SO_linkedObject
     }
     private new void OnMouseUp()
     {
+        Debug.Log(mouseDowndT);
         if (mouseDowndT < mouseDowndT_limit)
         {
             ToggleOpen();
