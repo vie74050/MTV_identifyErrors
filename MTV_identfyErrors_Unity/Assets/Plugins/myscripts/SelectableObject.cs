@@ -28,10 +28,15 @@ public class SelectableObject : MonoBehaviour
 	[Tooltip("Set the hilight tint")]
 	public Color highlighColour;
 
+	[Tooltip("Whether or not to set to snapToTransform if selected")]
+	public bool doSnapToTarget = false;
+	[Tooltip("Assign transform to snap to after selected")]
+	public Transform snapToTransform;
+
 	// draggable vars
 	public float snapbackDistMin = 5;
 	public float snapbackDistMax = 15;
-	public bool snaptoTarget = false;
+	
 	public bool isDraggable = true;                                 // set to make it draggable 
 	public bool isListItem = true;
 
@@ -77,7 +82,7 @@ public class SelectableObject : MonoBehaviour
 		SetOrigMaterials();
 
 		// adjusted pivot ref if any
-		Transform[] pivot = GetComponentsInChildren<Transform>();
+		//Transform[] pivot = GetComponentsInChildren<Transform>();
 		//pivotObj = pivot[pivot.Length-1];
 
 		// draggable: save orig positions
@@ -110,12 +115,17 @@ public class SelectableObject : MonoBehaviour
 			ao = new animationOverride();
 			ao.animOverride = false;
 		}
+
+		if (snapToTransform != null && doSnapToTarget) {
+			targetPos = snapToTransform.position;
+			// TODO rotation too?
+		}
 	}
 
 	void Update()
 	{
 		float speed = 10f;
-		if (snaptoTarget && !ao.animOverride && isTaskComplete)
+		if (doSnapToTarget && !ao.animOverride && isTaskComplete)
 		{
 
 			transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
@@ -192,6 +202,10 @@ public class SelectableObject : MonoBehaviour
 		if (isListItem)
 			print(transform.name);
 
+		if (doSnapToTarget && snapToTransform !=null) {
+			isTaskComplete = true;
+		}
+
 		gameObject.BroadcastMessage("e_selected", SendMessageOptions.DontRequireReceiver);
 		
 	}
@@ -206,7 +220,7 @@ public class SelectableObject : MonoBehaviour
 	public virtual void ResetPosition()
 	{
 		transform.localPosition = origPos;
-		snaptoTarget = false;
+		doSnapToTarget = false;
 	}
 
 	public virtual void ResetRotation()
@@ -226,7 +240,7 @@ public class SelectableObject : MonoBehaviour
 	}
 	protected void OnMouseDown()
 	{
-		if (!alphaMode && isDraggable)
+		if (!alphaMode)
 		{
 			GameObject[] dragTagObjs = GameObject.FindGameObjectsWithTag(tag_drag);
 

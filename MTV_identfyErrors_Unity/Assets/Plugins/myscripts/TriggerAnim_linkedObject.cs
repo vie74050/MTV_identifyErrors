@@ -29,7 +29,7 @@ public class TriggerAnim_linkedObject : MonoBehaviour {
 
 		string clip_name = clipToPlay.name;
 
-		if (!animTriggered && so.snaptoTarget) {
+		if (!animTriggered && so.doSnapToTarget) {
 			linked_object_anim.wrapMode = WrapMode.Once;
 			linked_object_anim.Play (clip_name);
 			animTriggered = true;
