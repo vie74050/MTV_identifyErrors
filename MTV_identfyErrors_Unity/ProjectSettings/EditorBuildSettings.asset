@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/__MICROCREDENTIAL/Scenes/MicroCred-Aesculap Pan Errors.unity
+    path: Assets/__MICROCREDENTIAL/Scenes/Aesculap Pan.unity
     guid: 05a299acc6686224d81112b605f464cc
   m_configObjects: {}

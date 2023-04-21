@@ -75,8 +75,8 @@ Material:
     - _Lightmapping: 1
     - _Metallic: 0
     - _Mode: 1
-    - _OcclusionStrength: 1
-    - _Outline: 0.005
+    - _OcclusionStrength: 0
+    - _Outline: -0.1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
