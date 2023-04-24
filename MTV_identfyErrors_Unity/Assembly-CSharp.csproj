@@ -36,11 +36,28 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Helpers\CombineChildren.cs" />
-     <Compile Include="Assets\Helpers\CombineChildrenExtended.cs" />
-     <Compile Include="Assets\Helpers\MeshCombineUtility.cs" />
-     <Compile Include="Assets\Helpers\MergeSubMeshes.cs" />
-     <Compile Include="Assets\Helpers\alphaModeViewer.cs" />
+     <Compile Include="Assets\Scripts\Drop scripts\IDropHandler.cs" />
+     <Compile Include="Assets\Scripts\TriggerAnim_linkedObject.cs" />
+     <Compile Include="Assets\Scripts\Drop scripts\Dropable.cs" />
+     <Compile Include="Assets\Scripts\Helpers\CombineChildren.cs" />
+     <Compile Include="Assets\Scripts\Helpers\CombineChildrenExtended.cs" />
+     <Compile Include="Assets\Scripts\Helpers\MeshCombineUtility.cs" />
+     <Compile Include="Assets\Scripts\Pivoter.cs" />
+     <Compile Include="Assets\Scripts\Drop scripts\Dropzone.cs" />
+     <Compile Include="Assets\Scripts\ObjectController.cs" />
+     <Compile Include="Assets\Scripts\SelectableObject.cs" />
+     <Compile Include="Assets\Scripts\Drop scripts\GameObjectsStatus.cs" />
+     <Compile Include="Assets\Scripts\ListItem.cs" />
+     <Compile Include="Assets\Scripts\Drop scripts\Drop_SetGOActive.cs" />
+     <Compile Include="Assets\Scripts\ActivityController.cs" />
+     <Compile Include="Assets\Scripts\CamControls.cs" />
+     <Compile Include="Assets\Scripts\Drop scripts\Drop_TrocarSeal.cs" />
+     <Compile Include="Assets\Scripts\Helpers\MergeSubMeshes.cs" />
+     <Compile Include="Assets\Scripts\SO_linkedObject.cs" />
+     <Compile Include="Assets\Scripts\Helpers\alphaModeViewer.cs" />
+     <Compile Include="Assets\Scripts\Helpers\StandardShaderUtils.cs" />
+     <Compile Include="Assets\Scripts\animationOverride.cs" />
+     <Compile Include="Assets\Scripts\EditorGameObject.cs" />
      <None Include="Assets\Resources\materials and shaders\Double Sided Shaders\Double Sided Transparent Diffuse Bump.shader" />
      <None Include="Assets\Resources\materials and shaders\Double Sided Shaders\Double Sided Emissive Diffuse.shader" />
      <None Include="Assets\Resources\materials and shaders\OutlineSilhouetteDiffuse.shader" />

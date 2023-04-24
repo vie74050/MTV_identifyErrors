@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Blood Splatter
+    second: {fileID: 2100000, guid: fced57caf6e91724ba0c0b04d9c57fb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Blue
     second: {fileID: 2100000, guid: 1b017696821c831489076622d04e44d0, type: 2}
   - first:
@@ -28,7 +33,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Laparoscopic
-    second: {fileID: 2100000, guid: 964e7440668c64b4d915e7c506a22f94, type: 2}
+    second: {fileID: 2100000, guid: 3b331184239f3fc4cbb6a2bb6bf85335, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

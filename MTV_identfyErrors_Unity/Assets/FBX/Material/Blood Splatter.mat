@@ -8,18 +8,20 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Blood Splatter
-  m_Shader: {fileID: 4800000, guid: 6dd0cf7cdfaa94b2f8aee31e07911230, type: 3}
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ALPHATEST_ON
+  - _SPECULARHIGHLIGHTS_OFF
   m_InvalidKeywords:
   - _LIGHTMAPPING_REALTIME
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -64,12 +66,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
-    - _Cutoff: 0.081
+    - _Cutoff: 0.172
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EmissionScaleUI: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.387
+    - _Glossiness: 0.525
     - _GlossyReflections: 1
     - _Lightmapping: 1
     - _Metallic: 0
@@ -78,12 +80,12 @@ Material:
     - _Outline: -0.5
     - _Parallax: 0.01
     - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
+    - _SpecularHighlights: 0
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.3490566, g: 0.07409222, b: 0.07409222, a: 1}
+    - _Color: {r: 0.5566038, g: 0.018378438, b: 0.018378438, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _OutColor: {r: 0, g: 0, b: 0, a: 0}
