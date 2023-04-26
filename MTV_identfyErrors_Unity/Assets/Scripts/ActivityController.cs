@@ -215,6 +215,11 @@ public class ActivityController : MonoBehaviour {
 		if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
 		{
 			overpart_name = hit.transform.name;
+			SelectableObject so = hit.transform.GetComponent<SelectableObject>();
+			if (so != null){
+				overpart_name = so.displayName;
+			}
+
 			//print(" overpart " + overpart_name);
 			if (Input.GetMouseButtonDown(0))
 			{

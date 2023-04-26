@@ -19,6 +19,9 @@ public class SelectableObject : MonoBehaviour
 	[DllImport("__Internal")]
 	private static extern void BrowserSelect(string str);
 
+	[Tooltip("Optional display name instead of transform name")]
+	public string displayName = "";
+
 	[Tooltip("if true, object is hilighted ")]
 	public bool isSelected = false;
 
@@ -119,6 +122,10 @@ public class SelectableObject : MonoBehaviour
 		if (snapToTransform != null && doSnapToTarget) {
 			targetPos = snapToTransform.position;
 			// TODO rotation too?
+		}
+
+		if (displayName == "") {
+			displayName = gameObject.name;
 		}
 	}
 
