@@ -56,9 +56,9 @@
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaGlobeEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\Warps\MegaCylindrifyWarpEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaMorphAnimEditor.cs" />
-     <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaShapeOSMWindow.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\Warps\MegaSpherifyWarpEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaSinusCurveEditor.cs" />
+     <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaShapeOSMWindow.cs" />
      <Compile Include="Assets\Plugins\kolmich\KGFCore\KGFGUIUtility\scripts\Editor\KGFGUIUtilityEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaTracksEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaCurveDeformEditor.cs" />
@@ -110,17 +110,17 @@
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaMeshPageEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\Warps\MegaSqueezeWarpEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaPrefabMaker.cs" />
-     <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaModifierEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaShapeWindow.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\Warps\MegaFFD4x4x4WarpEditor.cs" />
+     <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaModifierEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaMatSelectEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\MegaCache\Scripts\Editor\MegaCacheOBJEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaHoseAttachEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaParseEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaDisplaceEditor.cs" />
-     <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaHoseNewEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaRadialSkewEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaShapeHelixEditor.cs" />
+     <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaHoseNewEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaMeltEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaBendEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaTrainFollowEditor.cs" />
@@ -134,8 +134,8 @@
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaRubberEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaDisplaceLimitsEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaWarpBindEditor.cs" />
-     <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaShapeWizard.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaPathDeformEditor.cs" />
+     <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaShapeWizard.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaConformMultiEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaWorldPathDeformEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaCopyObjects.cs" />
@@ -143,8 +143,8 @@
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaPointCacheRefEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaShapeEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaScaleEditor.cs" />
-     <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaPageFlipEditor.cs" />
      <Compile Include="Assets\Plugins\kolmich\KGFTouch\scripts\Editor\KGFTouchEditor.cs" />
+     <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaPageFlipEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaRippleEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\Warps\MegaRippleWarpEditor.cs" />
      <Compile Include="Assets\Plugins\Mega-Fiers\Editor\MegaFiers\MegaShape\MegaShapeCircleEditor.cs" />
@@ -860,26 +860,26 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Services.Core.Analytics">
-        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Environments">
-        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
@@ -889,6 +889,18 @@
     </Reference>
     <Reference Include="Unity.Services.Core">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -47,6 +47,7 @@
      <Compile Include="Assets\Scripts\ObjectController.cs" />
      <Compile Include="Assets\Scripts\SelectableObject.cs" />
      <Compile Include="Assets\Scripts\Drop scripts\GameObjectsStatus.cs" />
+     <Compile Include="Assets\Scripts\EditorGameObject.cs" />
      <Compile Include="Assets\Scripts\ListItem.cs" />
      <Compile Include="Assets\Scripts\Drop scripts\Drop_SetGOActive.cs" />
      <Compile Include="Assets\Scripts\ActivityController.cs" />
@@ -57,7 +58,6 @@
      <Compile Include="Assets\Scripts\Helpers\alphaModeViewer.cs" />
      <Compile Include="Assets\Scripts\Helpers\StandardShaderUtils.cs" />
      <Compile Include="Assets\Scripts\animationOverride.cs" />
-     <Compile Include="Assets\Scripts\EditorGameObject.cs" />
      <None Include="Assets\Resources\materials and shaders\Double Sided Shaders\Double Sided Transparent Diffuse Bump.shader" />
      <None Include="Assets\Resources\materials and shaders\Double Sided Shaders\Double Sided Emissive Diffuse.shader" />
      <None Include="Assets\Resources\materials and shaders\OutlineSilhouetteDiffuse.shader" />
@@ -685,26 +685,26 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Services.Core.Analytics">
-        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Environments">
-        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
@@ -714,6 +714,18 @@
     </Reference>
     <Reference Include="Unity.Services.Core">
         <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>C:\Users\bcith\Documents\UnityProjects\NSPO - periop microcred\MTV_identifyErrors\MTV_identfyErrors_Unity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
