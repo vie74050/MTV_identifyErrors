@@ -17,7 +17,7 @@ public class MergeSubMeshes : MonoBehaviour {
         }
         transform.GetComponent<MeshFilter>().mesh = new Mesh();
         transform.GetComponent<MeshFilter>().mesh.CombineMeshes(combine);
-        transform.gameObject.active = true;
+        transform.gameObject.SetActive(true);
        
     }
 }
