@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.EventSystems;
 using System.Runtime.InteropServices;
 using UnityEngine.SceneManagement;
 

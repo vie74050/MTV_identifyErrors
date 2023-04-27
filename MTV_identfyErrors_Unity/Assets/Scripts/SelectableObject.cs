@@ -67,6 +67,11 @@ public class SelectableObject : MonoBehaviour
 	private Vector3 origCamTargetPos;
 	public float distFromCam = 5;
 
+	protected void Awake () {
+		if (displayName == "") {
+			displayName = gameObject.name;
+		}
+	}
 	protected void Start()
 	{
 		Init();
@@ -124,9 +129,6 @@ public class SelectableObject : MonoBehaviour
 			// TODO rotation too?
 		}
 
-		if (displayName == "") {
-			displayName = gameObject.name;
-		}
 	}
 
 	void Update()

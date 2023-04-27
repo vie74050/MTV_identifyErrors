@@ -30,7 +30,7 @@ public class Pivoter : SO_linkedObject
             i++;
         }
         initOpenState = isOpen;
-        //base.Init();       
+        base.Awake();       
     }
     public override void ResetPosition()
     {
@@ -61,7 +61,7 @@ public class Pivoter : SO_linkedObject
     }
     private new void OnMouseUp()
     {
-        Debug.Log(mouseDowndT);
+        //Debug.Log(mouseDowndT);
         if (mouseDowndT < mouseDowndT_limit)
         {
             ToggleOpen();

@@ -99,7 +99,7 @@ public class KGFGUIUtilityEditor
 		#endregion
 		
 		//set the look to Unity default
-		EditorGUIUtility.LookLikeControls();
+		//EditorGUIUtility.LookLikeControls();
 		
 		KGFGUIUtility.BeginVerticalBox(KGFGUIUtility.eStyleBox.eBoxDecorated, GUILayout.ExpandHeight(false), GUILayout.ExpandWidth(true));
 		{
@@ -124,8 +124,8 @@ public class KGFGUIUtilityEditor
 			KGFGUIUtility.EndVerticalBox();
 			
 			// check if the object is a prefab
-			PrefabType aPrefabType = PrefabUtility.GetPrefabType(theEditor.target);
-			bool theIsPrefab = !(aPrefabType == PrefabType.PrefabInstance || aPrefabType == PrefabType.None || aPrefabType == PrefabType.DisconnectedPrefabInstance);
+			PrefabAssetType aPrefabType = PrefabUtility.GetPrefabAssetType(theEditor.target);
+			bool theIsPrefab = aPrefabType == PrefabAssetType.Regular || aPrefabType == PrefabAssetType.Variant;
 			
 			// draw custom inspector gui
 			RenderObjectCustomGui(theEditor.target,theIsPrefab);
@@ -466,7 +466,7 @@ public class KGFGUIUtilityEditor
 		{
 			KGFGUIUtility.Label("path",KGFGUIUtility.eStyleLabel.eLabel, GUILayout.ExpandWidth(false));
 			
-			if (PrefabUtility.GetPrefabType(theComponent) == PrefabType.Prefab)
+			if (PrefabUtility.GetPrefabAssetType(theComponent) == PrefabAssetType.Regular)
 			{
 				KGFGUIUtility.TextField(AssetDatabase.GetAssetPath(theComponent), KGFGUIUtility.eStyleTextField.eTextField, GUILayout.ExpandWidth(true));
 			}

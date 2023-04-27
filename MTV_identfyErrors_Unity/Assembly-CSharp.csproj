@@ -44,7 +44,7 @@
      <Compile Include="Assets\Scripts\Helpers\MeshCombineUtility.cs" />
      <Compile Include="Assets\Scripts\Pivoter.cs" />
      <Compile Include="Assets\Scripts\Drop scripts\Dropzone.cs" />
-     <Compile Include="Assets\Scripts\ObjectController.cs" />
+     <Compile Include="Assets\Scripts\CamControlsObjectOrbiter.cs" />
      <Compile Include="Assets\Scripts\SelectableObject.cs" />
      <Compile Include="Assets\Scripts\Drop scripts\GameObjectsStatus.cs" />
      <Compile Include="Assets\Scripts\EditorGameObject.cs" />
@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Helpers\alphaModeViewer.cs" />
      <Compile Include="Assets\Scripts\Helpers\StandardShaderUtils.cs" />
      <Compile Include="Assets\Scripts\animationOverride.cs" />
+     <Compile Include="Assets\Scripts\ErrorObjects.cs" />
      <None Include="Assets\Resources\materials and shaders\Double Sided Shaders\Double Sided Transparent Diffuse Bump.shader" />
      <None Include="Assets\Resources\materials and shaders\Double Sided Shaders\Double Sided Emissive Diffuse.shader" />
      <None Include="Assets\Resources\materials and shaders\OutlineSilhouetteDiffuse.shader" />
