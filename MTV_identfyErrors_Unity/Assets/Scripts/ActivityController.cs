@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 [RequireComponent(typeof(KGFOrbitCam))]
 
@@ -193,6 +194,10 @@ public class ActivityController : MonoBehaviour {
 
 		anim = _MODEL.GetComponent<Animation> ();
 
+		items = new List<ListItem>();
+		MakeListItems(_MODEL, 0);
+
+		List<SelectableObject> listitems = GetSOListItems();
 		if (Application.platform == RuntimePlatform.WebGLPlayer) {
 			//Application.ExternalCall ("FromUnity_ApplicationStarted", true);
 			#if UNITY_WEBGL && !UNITY_EDITOR
@@ -200,8 +205,6 @@ public class ActivityController : MonoBehaviour {
 			#endif
 		}
 
-		items = new List<ListItem>();
-		MakeListItems(_MODEL, 0);
 	}
 
 	void Update(){
@@ -284,10 +287,10 @@ public class ActivityController : MonoBehaviour {
         }
 
 		if (showPartsList) {
-			items [0].selected = GUILayout.Toggle (items [0].selected, items [0].node.name, new GUIStyle ("button"));
+			items[0].selected = GUILayout.Toggle (items[0].selected, items[0].node.name, new GUIStyle ("button"));
 		} 
 		else {
-			items [0].selected = false;
+			items[0].selected = false;
 		}
 
 		// anim btn
@@ -342,6 +345,19 @@ public class ActivityController : MonoBehaviour {
 
 	}
 
+	/*Returns all Selectable Objects that are isListItem true */
+	private List<SelectableObject> GetSOListItems () {
+		SelectableObject[] sos = Object.FindObjectsOfType<SelectableObject>();
+		List<SelectableObject> listSos = new List<SelectableObject>();
+		
+		foreach (SelectableObject so in sos) {
+			if (so.isListItem) {
+				listSos.Add(so); Debug.Log(so.name);
+			}
+		}
+
+		return listSos;
+	}
 	private void GUI_SceneSelection()
 	{
 		GUILayout.BeginVertical();
@@ -487,14 +503,14 @@ public class ActivityController : MonoBehaviour {
 
 
 						foreach (int i in li.childIndices) {
-							if (items [i].so != null) {
+							if (items[i].so != null) {
 								if (items[i].so.isListItem)
 								{
 									items[i].showBtn = (items[i].so.isSelected) ? items[i].so.isSelected : showchildren;
 								}
 								
 							} else {
-								items [i].showBtn = showchildren;
+								items[i].showBtn = showchildren;
 							}
 
 						}
@@ -505,9 +521,9 @@ public class ActivityController : MonoBehaviour {
 					
 					foreach (int i in li.childIndices) {
 
-						if (items [i].so != null) {
-							li.showBtn = items [i].showBtn = items [i].so.isSelected;
-							if (items [i].so.isSelected){
+						if (items[i].so != null) {
+							li.showBtn = items[i].showBtn = items[i].so.isSelected;
+							if (items[i].so.isSelected){
 
 								break;
 							}
