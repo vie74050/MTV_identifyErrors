@@ -9,9 +9,12 @@ using System.Linq;
 public class ActivityController : MonoBehaviour {
 	
 
-	// from jslib to communicate with browser javascript
+	// from Plugins/JSLibs to communicate with browser javascript
 	[DllImport("__Internal")]
 	private static extern void BrowserApplicationStarted();
+
+	[DllImport("__Internal")]
+	private static extern void BrowserItemListString(string str);
 
 	[DllImport("__Internal")]
 	private static extern void BrowserSelect(string str);
@@ -197,11 +200,11 @@ public class ActivityController : MonoBehaviour {
 		items = new List<ListItem>();
 		MakeListItems(_MODEL, 0);
 
-		List<SelectableObject> listitems = GetSOListItems();
 		if (Application.platform == RuntimePlatform.WebGLPlayer) {
 			//Application.ExternalCall ("FromUnity_ApplicationStarted", true);
 			#if UNITY_WEBGL && !UNITY_EDITOR
 			BrowserApplicationStarted();
+			SetBrowserItemsList();
 			#endif
 		}
 
@@ -345,14 +348,24 @@ public class ActivityController : MonoBehaviour {
 
 	}
 
-	/*Returns all Selectable Objects that are isListItem true */
-	private List<SelectableObject> GetSOListItems () {
+	void SetBrowserItemsList() {
+		List<string> listitems = GetSOListItems();
+		string listitems_str = string.Join("\\", listitems); Debug.Log(listitems_str);
+		if (Application.platform == RuntimePlatform.WebGLPlayer) {
+			//Application.ExternalCall ("FromUnity_ApplicationStarted", true);
+			#if UNITY_WEBGL && !UNITY_EDITOR
+			BrowserItemListString(listitems_str);
+			#endif
+		}
+	}
+	///	<returns> List<string> Names of all Selectable Objects that are isListItem true</returns>
+	private List<string> GetSOListItems () {
 		SelectableObject[] sos = Object.FindObjectsOfType<SelectableObject>();
-		List<SelectableObject> listSos = new List<SelectableObject>();
+		List<string> listSos = new List<string>();
 		
 		foreach (SelectableObject so in sos) {
 			if (so.isListItem) {
-				listSos.Add(so); Debug.Log(so.name);
+				listSos.Add(so.name); 
 			}
 		}
 

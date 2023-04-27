@@ -16,7 +16,7 @@ public class Pivoter : SO_linkedObject
     private int mouseDowndT_limit = 30;
     private bool initOpenState = false;
 
-    void Awake()
+    new void Awake()
     {
         int i = 0;
         linkedObjects = new GameObject[pvObjs.Length];
