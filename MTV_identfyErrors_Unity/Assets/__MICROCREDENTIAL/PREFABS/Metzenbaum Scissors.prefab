@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 418729854447869650}
   - component: {fileID: 418729854447869660}
   - component: {fileID: 418729854447869661}
+  - component: {fileID: 6446248951624713146}
   m_Layer: 0
   m_Name: Metzenbaum Scissor L
   m_TagString: Untagged
@@ -83,6 +84,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6446248951624713146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418729854447869651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: 
+  isSelected: 0
+  alphaMode: 0
+  highlighColour: {r: 0, g: 0, b: 0, a: 0}
+  doSnapToTarget: 0
+  snapToTransform: {fileID: 0}
+  snapbackDistMin: 5
+  snapbackDistMax: 15
+  isDraggable: 0
+  isListItem: 0
+  targetPos: {x: 0, y: 10000, z: 0}
+  isTaskComplete: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  distFromCam: 5
 --- !u!1 &418729856132059108
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +147,7 @@ Transform:
   - {fileID: 418729854447869650}
   - {fileID: 418729856316518639}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &418729856132059110
 MeshRenderer:
@@ -218,12 +245,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9bbcbbd192cd2428abafa3887fe264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayName: 
   isSelected: 0
   alphaMode: 0
   highlighColour: {r: 250, g: 250, b: 30, a: 0.01}
+  doSnapToTarget: 0
+  snapToTransform: {fileID: 0}
   snapbackDistMin: 0
   snapbackDistMax: 15
-  snaptoTarget: 0
   isDraggable: 1
   isListItem: 1
   targetPos: {x: 0, y: 10000, z: 0}
@@ -267,6 +296,7 @@ GameObject:
   - component: {fileID: 418729856316518639}
   - component: {fileID: 418729856316518633}
   - component: {fileID: 418729856316518638}
+  - component: {fileID: 3270819311141710873}
   m_Layer: 0
   m_Name: Metzenbaum Scissor R
   m_TagString: Untagged
@@ -339,3 +369,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3270819311141710873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418729856316518636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: 
+  isSelected: 0
+  alphaMode: 0
+  highlighColour: {r: 0, g: 0, b: 0, a: 0}
+  doSnapToTarget: 0
+  snapToTransform: {fileID: 0}
+  snapbackDistMin: 5
+  snapbackDistMax: 15
+  isDraggable: 0
+  isListItem: 0
+  targetPos: {x: 0, y: 10000, z: 0}
+  isTaskComplete: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  distFromCam: 5

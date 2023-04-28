@@ -8,7 +8,7 @@ public class ErrorObjects : MonoBehaviour {
 	[Tooltip("Assign game object variants")]
 	public List<GameObject> itemsForRandomEnable=new List<GameObject>();
 
-	void Start () {
+	void Awake () {
 		// randomly choose one version to use
 		if (itemsForRandomEnable!=null && itemsForRandomEnable.Count>0)
          {

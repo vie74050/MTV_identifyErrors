@@ -204,10 +204,10 @@ public class ActivityController : MonoBehaviour {
 			//Application.ExternalCall ("FromUnity_ApplicationStarted", true);
 			#if UNITY_WEBGL && !UNITY_EDITOR
 			BrowserApplicationStarted();
-			SetBrowserItemsList();
+			
 			#endif
 		}
-
+		SetBrowserItemsList();
 	}
 
 	void Update(){
@@ -360,12 +360,12 @@ public class ActivityController : MonoBehaviour {
 	}
 	///	<returns> List<string> Names of all Selectable Objects that are isListItem true</returns>
 	private List<string> GetSOListItems () {
-		SelectableObject[] sos = Object.FindObjectsOfType<SelectableObject>();
+		SelectableObject[] sos = _MODEL.GetComponentsInChildren<SelectableObject>();
 		List<string> listSos = new List<string>();
 		
 		foreach (SelectableObject so in sos) {
-			if (so.isListItem) {
-				listSos.Add(so.name); 
+			if (so.isListItem && so.isActiveAndEnabled) {
+				listSos.Add(so.name); //Debug.Log(so.name);
 			}
 		}
 

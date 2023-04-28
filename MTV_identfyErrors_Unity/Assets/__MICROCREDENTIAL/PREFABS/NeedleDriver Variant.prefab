@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 56b25c243cfff804d8a3e06c8fe39a9b, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 56b25c243cfff804d8a3e06c8fe39a9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -137,12 +137,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9bbcbbd192cd2428abafa3887fe264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayName: 
   isSelected: 0
   alphaMode: 0
   highlighColour: {r: 250, g: 250, b: 30, a: 0.01}
+  doSnapToTarget: 0
+  snapToTransform: {fileID: 0}
   snapbackDistMin: 0
   snapbackDistMax: 15
-  snaptoTarget: 0
   isDraggable: 1
   isListItem: 1
   targetPos: {x: 0, y: 10000, z: 0}
@@ -167,11 +169,63 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 56b25c243cfff804d8a3e06c8fe39a9b, type: 3}
   m_PrefabInstance: {fileID: 6815587087515097041}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5516079976732400302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6815587087514997107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: 
+  isSelected: 0
+  alphaMode: 0
+  highlighColour: {r: 0, g: 0, b: 0, a: 0}
+  doSnapToTarget: 0
+  snapToTransform: {fileID: 0}
+  snapbackDistMin: 5
+  snapbackDistMax: 15
+  isDraggable: 0
+  isListItem: 0
+  targetPos: {x: 0, y: 10000, z: 0}
+  isTaskComplete: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  distFromCam: 5
 --- !u!1 &6815587087514997109 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 56b25c243cfff804d8a3e06c8fe39a9b, type: 3}
   m_PrefabInstance: {fileID: 6815587087515097041}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3222189198605354254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6815587087514997109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: 
+  isSelected: 0
+  alphaMode: 0
+  highlighColour: {r: 0, g: 0, b: 0, a: 0}
+  doSnapToTarget: 0
+  snapToTransform: {fileID: 0}
+  snapbackDistMin: 5
+  snapbackDistMax: 15
+  isDraggable: 0
+  isListItem: 0
+  targetPos: {x: 0, y: 10000, z: 0}
+  isTaskComplete: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  distFromCam: 5
 --- !u!4 &6815587087515225427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 56b25c243cfff804d8a3e06c8fe39a9b, type: 3}

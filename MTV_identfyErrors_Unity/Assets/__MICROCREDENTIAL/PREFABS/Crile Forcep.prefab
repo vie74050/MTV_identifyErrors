@@ -93,12 +93,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9bbcbbd192cd2428abafa3887fe264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayName: 
   isSelected: 0
   alphaMode: 0
   highlighColour: {r: 0, g: 0, b: 0, a: 0}
+  doSnapToTarget: 0
+  snapToTransform: {fileID: 0}
   snapbackDistMin: 0.1
   snapbackDistMax: 15
-  snaptoTarget: 0
   isDraggable: 1
   isListItem: 1
   targetPos: {x: 0, y: 10000, z: 0}
@@ -142,6 +144,7 @@ GameObject:
   - component: {fileID: 5435712128992252994}
   - component: {fileID: 5435712129023425798}
   - component: {fileID: 5435712129023425799}
+  - component: {fileID: 8366735784305917711}
   m_Layer: 0
   m_Name: CrileForcepL
   m_TagString: Untagged
@@ -214,6 +217,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8366735784305917711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5435712129023425796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: 
+  isSelected: 0
+  alphaMode: 0
+  highlighColour: {r: 0, g: 0, b: 0, a: 0}
+  doSnapToTarget: 0
+  snapToTransform: {fileID: 0}
+  snapbackDistMin: 5
+  snapbackDistMax: 15
+  isDraggable: 0
+  isListItem: 0
+  targetPos: {x: 0, y: 10000, z: 0}
+  isTaskComplete: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  distFromCam: 5
 --- !u!1 &5435712129245970974
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +285,7 @@ GameObject:
   - component: {fileID: 5435712129182887809}
   - component: {fileID: 5435712129860696174}
   - component: {fileID: 5435712129860696175}
+  - component: {fileID: 3096780273424814559}
   m_Layer: 0
   m_Name: CrileForcepR
   m_TagString: Untagged
@@ -328,3 +358,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3096780273424814559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5435712129860696172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: 
+  isSelected: 0
+  alphaMode: 0
+  highlighColour: {r: 0, g: 0, b: 0, a: 0}
+  doSnapToTarget: 0
+  snapToTransform: {fileID: 0}
+  snapbackDistMin: 5
+  snapbackDistMax: 15
+  isDraggable: 0
+  isListItem: 0
+  targetPos: {x: 0, y: 10000, z: 0}
+  isTaskComplete: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  distFromCam: 5
