@@ -9,15 +9,16 @@
       href="https://learn.bcit.ca/shared/scripts/interactive/UnityModelViewerTemplateData/favicon.ico"
     />
     <!-- jquery & jquery ui min -->
-    <link rel="stylesheet" href="Libs/jquery-bootstrap-UMV.min.css" />
+    <link rel="stylesheet" href="../Libs/jquery-bootstrap-UMV.min.css" />
 
-    <script src="Libs/jquery.min.js"></script>
+    <script src="../Libs/jquery.min.js"></script>
 
     <!-- Unity Handlers-->
     <script
       src="https://learn.bcit.ca/shared/scripts/interactive/UnityModelViewerTemplateData/FromToUnityHandlers.js"
       type="text/javascript"
     ></script>
+    <link rel="stylesheet" href="../Scripts/styles.css" />
   </head>
   <body class="d2l-edittable">
     <div class="mmd instructions">
@@ -44,17 +45,44 @@
       or W,S
     </div>
 
+    <div id="loading-cover">
+      <div id="logo"><img src="logo.png"></div>  
+
+      <div id="unity-loading-bar">        
+        <div id="unity-progress-bar-empty" ></div>
+          <div id="unity-progress-bar-full"></div>
+        </div>
+        <div class="spinner"></div>
+      </div>
+    </div>
+
     <!-- Unity editor v22.1.7 webpage loading -->
     <script>
-      var canvas = document.createElement("CANVAS");
+      const canvas = document.createElement("CANVAS");
       canvas.id = "unity-canvas";
       canvas.width = 1224;
       canvas.height = 600;
       document.body.appendChild(canvas);
 
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
-      var script = document.createElement("script");
+      const buildUrl = "Build";
+      const loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
+      const config = {
+        dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
+        frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
+        codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "{{{ COMPANY_NAME }}}",
+        productName: "{{{ PRODUCT_NAME }}}",
+        productVersion: "{{{ PRODUCT_VERSION }}}",
+      };
+      
+      const loadingCover = document.querySelector("#loading-cover");
+      const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
+      const progressBarFull = document.querySelector("#unity-progress-bar-full");
+      const fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      const spinner = document.querySelector('.spinner');
+
+      const script = document.createElement("script");
       script.src = loaderUrl;
 
       script.onload = () => {
@@ -67,24 +95,22 @@
           document.getElementsByTagName("head")[0].appendChild(meta);
         }
 
-        createUnityInstance(document.querySelector("#unity-canvas"), {
-          dataUrl: "Build/NSPO_MTV_identfyErrors_web.data.gz",
-          frameworkUrl: "Build/NSPO_MTV_identfyErrors_web.framework.js.gz",
-          codeUrl: "Build/NSPO_MTV_identfyErrors_web.wasm.gz",
-          streamingAssetsUrl: "StreamingAssets",
-          companyName: "DefaultCompany",
-          productName: "MTV_identfyErrors",
-          productVersion: "0.1",
-          // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-          // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        createUnityInstance(canvas, config, (progress) => {
+          spinner.style.display = "none";
+          progressBarEmpty.style.display = "";
+          progressBarFull.style.width = `${100 * progress}%`;
+        }).then((unityInstance) => {
+          loadingCover.style.display = "none";
+        }).catch((message) => {
+          alert(message);
         });
       };
       document.body.appendChild(script);
-
+      
       // expect / deliminted string of game object names
-      var list = "";
+      var arList;
       function FromUnity_SetListItems(str) {
-        list = str;
+        arList = str.split("\\");
       }
     </script>
 
