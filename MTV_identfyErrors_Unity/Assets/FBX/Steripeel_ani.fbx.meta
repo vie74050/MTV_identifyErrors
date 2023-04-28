@@ -12,6 +12,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: 01 - Default
     second: {fileID: 2100000, guid: 7b2cbba9d2ace1647a0a00ec53a62d96, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Steripeel
+    second: {fileID: 2800000, guid: 507276b71e980764b8f3b5dd0f4b9beb, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
