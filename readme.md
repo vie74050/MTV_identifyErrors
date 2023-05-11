@@ -13,8 +13,8 @@ Everything is built from external resources.
 
 ### Unity builder ###
 
-Build published by **MTV_identifyErrors** Unity project Engine v 2022.1.7f1.  
-src: <https://github.com/vie74050/MTV_identifyErrors>
+Build published by **MTV_identifyErrors_Unity** project Engine v 2022.1.7f1.  
+src: <https://github.com/vie74050/MTV_identifyErrors_Unity>
 
 - Objects in scene that are errors will be named with suffix `- ERROR`.
 - Build settings should have `Decompression Fallback` checked under `Player settings > Publishing Settings`
