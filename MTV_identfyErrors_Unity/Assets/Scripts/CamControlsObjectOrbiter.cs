@@ -41,7 +41,7 @@ public class ObjectController : MonoBehaviour {
 			target = ac._MODEL.transform;
 		} else if (target == null) {
 			// if no activity controller then target should be first child of this holder game object
-			target = GetComponentInChildren<Transform>();  Debug.Log(target);
+			target = GetComponentInChildren<Transform>();  //Debug.Log(target);
 		}
 
 		target.parent = holder.transform;

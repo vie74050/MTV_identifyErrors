@@ -31,7 +31,7 @@ public class Drop_TrocarSeal : MonoBehaviour, IDropHandler
             if (parentSO.isTaskComplete)
             {
                 dropzone_trocar.enabled = true;
-                print(parentSO.name);
+                //print(parentSO.name);
             }
         }
     }

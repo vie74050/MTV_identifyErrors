@@ -34,7 +34,7 @@ public class TriggerAnim_linkedObject : MonoBehaviour {
 			linked_object_anim.Play (clip_name);
 			animTriggered = true;
 
-			Debug.Log ("play anim");
+			//Debug.Log ("play anim");
 		}
 	
 	}
@@ -43,7 +43,7 @@ public class TriggerAnim_linkedObject : MonoBehaviour {
 		linked_object_anim.Rewind();
 		linked_object_anim.Stop();
 		animTriggered = false;
-		Debug.Log ("reset anim " + transform.name);
+		//Debug.Log ("reset anim " + transform.name);
 	}
 
 	private void e_resetAll(){

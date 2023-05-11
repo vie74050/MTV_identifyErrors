@@ -24,7 +24,7 @@ public class animationOverride : MonoBehaviour {
        
         if (!anim.IsPlaying(anim.clip.name))
         {
-            Debug.Log("reset anim");
+            //Debug.Log("reset anim");
             anim.Stop();
             anim.Rewind(anim.clip.name);
         }
