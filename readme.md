@@ -1,11 +1,13 @@
-# Unity Model Task Viewer - Identify Errors Aesculap Pan #
+# Unity Model Task Viewer - WebGL Builds #
 
 (c) 2023 May 4 Vienna Ly  
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a></a>
 
 ## App description ##
 
-Everything is built from external resources.  This repo is only for modifying the `<table>` element of the html page after build and publishing to github pages for review.
+This repo is for hosting builds and publishing to github pages for review. Each build should be in it's own subdirectory.  
+
+Everything is built from external resources. 
 
 ### Unity builder ###
 
@@ -27,7 +29,9 @@ src: <https://github.com/vie74050/MTV_identifyErrors_web>
 
 ## HTML Table ##
 
-After Build, `index.html` will be re-written and revert to template content. Add the table to `index.html` `<body>` to add custom description prompts for corresponding items in table.
+A `<table>` can be added to the built `index.html`to over ride default descriptions/prompts.  
+
+e.g. For AesculapPan
 
   ```html
   <table>
@@ -72,3 +76,4 @@ After Build, `index.html` will be re-written and revert to template content. Add
       </tbody>
     </table>
   ```
+After Unity Build, the `index.html` will be re-written and revert to template content. If any changes were previously made, just revert the `index.html` so the change are not pushed.
