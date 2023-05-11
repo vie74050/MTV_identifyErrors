@@ -5,7 +5,7 @@
 
 ## App description ##
 
-The model viewer task is to identify errors in the scene.  
+Everything is built from external resources.  This repo is only for modifying the `<table>` element of the html page after build and publishing to github pages for review.
 
 ### Unity builder ###
 
