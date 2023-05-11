@@ -34,7 +34,6 @@ public class Dropable : MonoBehaviour
 			SetChildrenColliders(false);
 		}
 	}
-		
 	private void OnMouseDrag()
 	{
 		SetDzsLayer("Default");

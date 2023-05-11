@@ -211,8 +211,7 @@ public class ActivityController : MonoBehaviour {
 	}
 
 	void Update(){
-		
-		
+				
 		RaycastHit hit;
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -222,28 +221,33 @@ public class ActivityController : MonoBehaviour {
 			SelectableObject so = hit.transform.GetComponent<SelectableObject>();
 			if (so != null){
 				overpart_name = so.displayName;
-			}
-
-			//print(" overpart " + overpart_name);
-			if (Input.GetMouseButtonDown(0))
-			{
-				Transform t = hit.transform;
-				currentSelection = t;
-			}
+				// object rotate with right mouse drag if over s.o
+				if (Input.GetMouseButton(1) && so.isDraggable && currentSelection==null)
+				{
+					currentSelection = hit.transform;
+				}
 			
+			}
 		}
 		else
 		{
 			overpart_name = "";
 		}
 
-		if (!Input.GetMouseButton(0)){ 
-			currentSelection = null;
+		if (!Input.GetMouseButton(1)){ 
+			currentSelection = null; 
+		}else {
+			if (currentSelection !=null) {
+				
+				float h = 10 * Input.GetAxis("Mouse X");
+				float v = 10 * Input.GetAxis("Mouse Y");
+
+				currentSelection.Rotate(v, h, 0);
+			}
 		}
 
 		camsettings.SetZoomEnable(!overGUI);
-		//camsettings.SetPanningEnable(!overGUI && currentSelection == null);
-		camsettings.SetRotationEnable(!overGUI);
+		camsettings.SetRotationEnable(!overGUI && currentSelection==null);
 		
 	}
 	
@@ -350,7 +354,7 @@ public class ActivityController : MonoBehaviour {
 
 	void SetBrowserItemsList() {
 		List<string> listitems = GetSOListItems();
-		string listitems_str = string.Join("\\", listitems); Debug.Log(listitems_str);
+		string listitems_str = string.Join("\\", listitems); //Debug.Log(listitems_str);
 		if (Application.platform == RuntimePlatform.WebGLPlayer) {
 			//Application.ExternalCall ("FromUnity_ApplicationStarted", true);
 			#if UNITY_WEBGL && !UNITY_EDITOR

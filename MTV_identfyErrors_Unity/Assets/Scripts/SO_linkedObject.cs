@@ -77,22 +77,26 @@ public class SO_linkedObject : SelectableObject {
 	public override void Deselect(){
 		base.Deselect();
 		// also deselects linkedObjects
-		foreach (GameObject go in linkedObjectsList) {
-			SelectableObject so = go.GetComponent<SelectableObject>();
-			//print("link object select: " + go.name);
-			if (so != null)
-			{
-				so.alphaMode = alphaMode;
-				so.isDraggable = false;
-				so.isSelected = false;
-				so.Deselect();
+		if (linkedObjectsList.Count>0) {
+			foreach (GameObject go in linkedObjectsList) {
+				SelectableObject so = go.GetComponent<SelectableObject>();
 				
-			}
-			else
-			{
-				go.SetActive(false);
+				if (so != null)
+				{
+					so.alphaMode = alphaMode;
+					so.isDraggable = false;
+					so.isSelected = false;
+					so.Deselect();
+					
+				}
+				else
+				{
+					go.SetActive(false);
+				}
 			}
 		}
+		
+		
 
 	}
 }

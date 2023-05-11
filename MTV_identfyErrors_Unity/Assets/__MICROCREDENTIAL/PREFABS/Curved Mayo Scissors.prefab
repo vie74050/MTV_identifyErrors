@@ -326,9 +326,7 @@ MonoBehaviour:
   isTaskComplete: 0
   screenPoint: {x: 0, y: 0, z: 0}
   distFromCam: 2
-  linkedObjects:
-  - {fileID: 3247597587155557687}
-  - {fileID: 3247597587155557681}
+  linkedObjects: []
   isOpen: 0
   pvObjs:
   - max: 10

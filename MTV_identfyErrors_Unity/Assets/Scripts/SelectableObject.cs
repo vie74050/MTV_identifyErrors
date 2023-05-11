@@ -208,8 +208,8 @@ public class SelectableObject : MonoBehaviour
 			#endif
 
 		}
-		if (isListItem)
-			print(transform.name);
+		/*if (isListItem)
+			print(transform.name);*/
 
 		if (doSnapToTarget && snapToTransform !=null) {
 			isTaskComplete = true;
