@@ -222,7 +222,10 @@ public class ActivityController : MonoBehaviour {
 			if (so != null){
 				overpart_name = so.displayName;
 				// object rotate with right mouse drag if over s.o
-				if (Input.GetMouseButton(1) && so.isDraggable && currentSelection==null)
+				if (Input.GetMouseButton(1) 
+					&& so.isDraggable 
+					&& currentSelection==null
+					&& !so.IsAtOrigPos())
 				{
 					currentSelection = hit.transform;
 				}

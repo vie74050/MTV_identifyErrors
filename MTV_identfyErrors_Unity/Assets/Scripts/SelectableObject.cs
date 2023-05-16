@@ -485,4 +485,9 @@ public class SelectableObject : MonoBehaviour
 		
 
 	}
+
+	public bool IsAtOrigPos() {
+		bool atOrig = transform.localPosition == origPos;
+		return atOrig;
+	}
 }
