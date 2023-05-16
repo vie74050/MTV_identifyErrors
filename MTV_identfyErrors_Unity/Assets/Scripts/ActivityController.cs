@@ -234,16 +234,16 @@ public class ActivityController : MonoBehaviour {
 			overpart_name = "";
 		}
 
-		if (!Input.GetMouseButton(1)){ 
-			currentSelection = null; 
-		}else {
+		if (Input.GetMouseButton(1)){ 
 			if (currentSelection !=null) {
 				
 				float h = 10 * Input.GetAxis("Mouse X");
 				float v = 10 * Input.GetAxis("Mouse Y");
 
-				currentSelection.Rotate(v, h, 0);
+				currentSelection.Rotate(-v, 0, h);
 			}
+		}else {
+			currentSelection = null; 
 		}
 
 		camsettings.SetZoomEnable(!overGUI);
@@ -270,23 +270,24 @@ public class ActivityController : MonoBehaviour {
 		else
 		{
 			//reset btn
-			if (GUILayout.Button("Reset"))
+			if (GUILayout.Button("Restart"))
 			{
 				ResetAll();
 			}
 		}
 
+		if (showAlphaMode || showPartsList) {
+			if (GUILayout.Button("Deselect All")) {
+				GameObject[] dragTagObjs = GameObject.FindGameObjectsWithTag ("Draggable");
+				foreach (GameObject go in dragTagObjs) {
+					SelectableObject so = go.GetComponent<SelectableObject> ();
+					so.Deselect ();
 
-		if (GUILayout.Button("Deselect All")) {
-			GameObject[] dragTagObjs = GameObject.FindGameObjectsWithTag ("Draggable");
-			foreach (GameObject go in dragTagObjs) {
-				SelectableObject so = go.GetComponent<SelectableObject> ();
-				so.Deselect ();
-
+				}
+				ClearBrowserSelect();
 			}
-			ClearBrowserSelect();
 		}
-
+		
         // transparencey btn
         if (showAlphaMode)
         {

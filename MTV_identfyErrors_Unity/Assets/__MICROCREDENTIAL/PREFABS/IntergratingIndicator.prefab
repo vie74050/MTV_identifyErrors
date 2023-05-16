@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2202628537273865901}
   - component: {fileID: 4460549675378177558}
   - component: {fileID: 7175396084002291673}
+  - component: {fileID: 6989863910962685915}
   m_Layer: 0
   m_Name: back geo
   m_TagString: Untagged
@@ -97,6 +98,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0000004, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6989863910962685915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456095042709071071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: 
+  isSelected: 0
+  alphaMode: 0
+  highlighColour: {r: 0, g: 0, b: 0, a: 0}
+  doSnapToTarget: 0
+  snapToTransform: {fileID: 0}
+  snapbackDistMin: 5
+  snapbackDistMax: 15
+  isDraggable: 0
+  isListItem: 0
+  targetPos: {x: 0, y: 10000, z: 0}
+  isTaskComplete: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  distFromCam: 5
 --- !u!1 &2306328928379158901
 GameObject:
   m_ObjectHideFlags: 0
