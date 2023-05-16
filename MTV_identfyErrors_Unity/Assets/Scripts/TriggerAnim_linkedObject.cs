@@ -24,19 +24,9 @@ public class TriggerAnim_linkedObject : MonoBehaviour {
 		col_status = GetComponent<Collider> ().enabled;
 	}
 
-	// handles broadcast message event from SelectableObject
+	// handles broadcast message event from parent SelectableObject
 	private void e_selected(){
-
-		string clip_name = clipToPlay.name;
-
-		if (!animTriggered && so.doSnapToTarget) {
-			linked_object_anim.wrapMode = WrapMode.Once;
-			linked_object_anim.Play(clip_name);
-			animTriggered = true;
-
-			//Debug.Log ("play anim");
-		}
-	
+		
 	}
 
 	private void e_reset(){
@@ -50,5 +40,20 @@ public class TriggerAnim_linkedObject : MonoBehaviour {
         //Debug.Log ("Reset all");
         e_reset();
 		GetComponent<Collider> ().enabled = col_status;
+	}
+
+	private void OnMouseDown(){
+		triggerAnim();
+	}
+	private void triggerAnim() {
+		string clip_name = clipToPlay.name;
+
+		if (!animTriggered && so.doSnapToTarget) {
+			linked_object_anim.wrapMode = WrapMode.Once;
+			linked_object_anim.Play(clip_name);
+			animTriggered = true;
+
+			//Debug.Log ("play anim");
+		}
 	}
 }
