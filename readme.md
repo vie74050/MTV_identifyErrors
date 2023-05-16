@@ -8,6 +8,7 @@
 This repo is for hosting builds and publishing to github pages for review. Each build should be in it's own subdirectory:
 
 - [Aesculap Pan](https://vie74050.github.io/MTV_identifyErrors/AesculapPan/)
+- [Steripeel](https://vie74050.github.io/MTV_identifyErrors/Steripeel/)
 
 Everything is built from external resources. 
 
@@ -18,6 +19,10 @@ src: <https://github.com/vie74050/MTV_identifyErrors_Unity>
 
 - Objects in scene that are errors will be named with suffix `- ERROR`.
 - Build settings should have `Decompression Fallback` checked under `Player settings > Publishing Settings`
+
+#### Updating builds ####
+
+After Unity Build, the `index.html` will be re-written and revert to template content. If any changes were previously made to the table, just revert the `index.html` so the change are not pushed.
 
 ### Web handler ###
 
@@ -78,4 +83,3 @@ e.g. For AesculapPan
       </tbody>
     </table>
   ```
-After Unity Build, the `index.html` will be re-written and revert to template content. If any changes were previously made, just revert the `index.html` so the change are not pushed.
