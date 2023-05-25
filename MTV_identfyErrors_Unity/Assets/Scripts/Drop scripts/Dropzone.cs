@@ -62,7 +62,7 @@ public class Dropzone : MonoBehaviour
 			isHit = (hit.transform == transform);	
 		}
 
-		if (isHit)
+		if (isHit && Input.GetMouseButton(0))
 		{
 			ChangeMaterialColor("select");
 		}

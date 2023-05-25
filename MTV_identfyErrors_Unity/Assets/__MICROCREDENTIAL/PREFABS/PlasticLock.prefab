@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 7763354607098129207}
   - component: {fileID: 3261334659594896339}
   - component: {fileID: 333200342}
-  - component: {fileID: 333200341}
+  - component: {fileID: 43936779717561520}
+  - component: {fileID: 7075764108231015579}
   m_Layer: 0
   m_Name: PlasticLock
   m_TagString: Untagged
@@ -96,11 +97,11 @@ BoxCollider:
   m_GameObject: {fileID: 1160656187707875738}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.99460316, y: 0.5713316, z: 1.0380901}
-  m_Center: {x: 0.0058936477, y: 0.004518926, z: -0.22162849}
---- !u!114 &333200341
+  m_Size: {x: 0.99460316, y: 0.28689632, z: 1.152919}
+  m_Center: {x: 0.005893617, y: -0.0035858739, z: -0.16421416}
+--- !u!114 &43936779717561520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,32 +110,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 1160656187707875738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac9bbcbbd192cd2428abafa3887fe264, type: 3}
+  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayName: 
   isSelected: 0
   alphaMode: 0
   highlighColour: {r: 0, g: 0, b: 0, a: 0}
+  doSnapToTarget: 1
+  snapToTransform: {fileID: 0}
   snapbackDistMin: 0.1
   snapbackDistMax: 15
-  snaptoTarget: 1
-  isDraggable: 1
+  isDraggable: 0
   isListItem: 1
-  targetPos: {x: 0, y: 0, z: 0}
+  targetPos: {x: 0, y: 10000, z: 0}
   isTaskComplete: 0
   screenPoint: {x: 0, y: 0, z: 0}
-  distFromCam: 2
-  linkedObjects: []
-  isOpen: 0
-  pvObjs:
-  - max: 40
-    t: {fileID: 1968260004135811872}
-    pivot: {fileID: 519871663598077039}
-    rotaxis: {x: 0, y: 1, z: 0}
-  - max: -80
-    t: {fileID: 2913059008862065262}
-    pivot: {fileID: 519871663598077039}
-    rotaxis: {x: 0, y: 1, z: 0}
+  distFromCam: 5
+--- !u!111 &7075764108231015579
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160656187707875738}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 2c823897bd694d34aa35a98d95dbd5bc, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 2c823897bd694d34aa35a98d95dbd5bc, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &3818696247783281666
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,6 +152,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 519871663598077039}
+  - component: {fileID: 7115802880133308807}
+  - component: {fileID: 2700058226726524354}
+  - component: {fileID: 3651155012451049861}
   m_Layer: 0
   m_Name: pivot
   m_TagString: Untagged
@@ -166,6 +177,59 @@ Transform:
   m_Father: {fileID: 1968260004135811872}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7115802880133308807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3818696247783281666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: 
+  isSelected: 0
+  alphaMode: 0
+  highlighColour: {r: 0, g: 0, b: 0, a: 0}
+  doSnapToTarget: 1
+  snapToTransform: {fileID: 0}
+  snapbackDistMin: 5
+  snapbackDistMax: 15
+  isDraggable: 1
+  isListItem: 1
+  targetPos: {x: 0, y: 10000, z: 0}
+  isTaskComplete: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  distFromCam: 5
+--- !u!65 &2700058226726524354
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3818696247783281666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.8938898, z: 1.2387463}
+  m_Center: {x: -0.000000051387726, y: -0.05305504, z: 0.25201097}
+--- !u!114 &3651155012451049861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3818696247783281666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352b53107fdd87a43b30886d25e3c79a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linked_object_anim: {fileID: 0}
+  clipToPlay: {fileID: 7400000, guid: 2c823897bd694d34aa35a98d95dbd5bc, type: 2}
 --- !u!1 &7454615591738688136
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,12 +326,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd397555201c438987fa10fa4d97709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayName: 
   isSelected: 0
   alphaMode: 0
   highlighColour: {r: 0, g: 0, b: 0, a: 0}
+  doSnapToTarget: 0
+  snapToTransform: {fileID: 0}
   snapbackDistMin: 5
   snapbackDistMax: 15
-  snaptoTarget: 0
   isDraggable: 0
   isListItem: 0
   targetPos: {x: 0, y: 10000, z: 0}

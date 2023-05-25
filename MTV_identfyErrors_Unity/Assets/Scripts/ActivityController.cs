@@ -253,7 +253,7 @@ public class ActivityController : MonoBehaviour {
 		camsettings.SetRotationEnable(!overGUI && currentSelection==null);
 		
 	}
-	
+	/*
 	void OnGUI(){
 		GUI.skin = _skin;
 
@@ -263,7 +263,7 @@ public class ActivityController : MonoBehaviour {
 			GUI.Label(new Rect(Screen.width - 100, Screen.height - 100, 100, 100), logo);
 		}
 
-		/**** global control buttons ***/
+		// global control buttons ///
 
 		// scene load btns
 		if (sceneNames.Length > 0)
@@ -273,7 +273,7 @@ public class ActivityController : MonoBehaviour {
 		else
 		{
 			//reset btn
-			if (GUILayout.Button("Restart"))
+			//if (GUILayout.Button("Restart"))
 			{
 				ResetAll();
 			}
@@ -355,7 +355,7 @@ public class ActivityController : MonoBehaviour {
 		}
 
 	}
-
+*/
 	void SetBrowserItemsList() {
 		List<string> listitems = GetSOListItems();
 		string listitems_str = string.Join("\\", listitems); //Debug.Log(listitems_str);
