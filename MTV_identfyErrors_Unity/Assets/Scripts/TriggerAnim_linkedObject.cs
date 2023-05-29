@@ -4,13 +4,12 @@ using UnityEngine;
 
 /* 
  * (SO=Selectable Object)
- * Add to SO item that is meant to act as an invisible trigger of another SO's animation
- * Use the invisbile material on it so that it does not show in scene.
- * 
+ * Add to SO item that is meant to act as an invisible trigger animation clip on the assigned 'linked_object_anim' 
+ * 2023 note: Animation must use animation clips that are AnimationType "Legacy" 
 */
 
 public class TriggerAnim_linkedObject : MonoBehaviour {
-	[Tooltip("The anim of a linked object to triger with this is selected")]
+	[Tooltip("The anim of a linked object to trigger if selected")]
 	public Animation linked_object_anim;
 
 	public AnimationClip clipToPlay;  // set specific clip to play for multistep use.
@@ -53,7 +52,7 @@ public class TriggerAnim_linkedObject : MonoBehaviour {
 			linked_object_anim.Play(clip_name);
 			animTriggered = true;
 
-			//Debug.Log ("play anim");
+			Debug.Log ("play anim " + linked_object_anim);
 		}
 	}
 }
