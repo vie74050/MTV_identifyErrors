@@ -207,7 +207,7 @@ public class ActivityController : MonoBehaviour {
 			
 			#endif
 		}
-		SetBrowserItemsList();
+		
 	}
 
 	void Update(){
@@ -348,6 +348,7 @@ public class ActivityController : MonoBehaviour {
 
 	}
 
+	// Method for Browser to get updated item lists
 	void SetBrowserItemsList() {
 		List<string> listitems = GetSOListItems();
 		string listitems_str = string.Join("\\", listitems); //Debug.Log(listitems_str);

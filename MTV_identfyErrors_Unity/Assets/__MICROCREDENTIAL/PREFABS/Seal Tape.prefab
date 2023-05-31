@@ -119,9 +119,9 @@ Animation:
   m_GameObject: {fileID: 5291249628790458004}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: dca767818d4a27947ba8d3d67fef9872, type: 2}
+  m_Animation: {fileID: 7400000, guid: d803fca8b16ba754481ccccde33f7b67, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: dca767818d4a27947ba8d3d67fef9872, type: 2}
+  - {fileID: 7400000, guid: d803fca8b16ba754481ccccde33f7b67, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -202,7 +202,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8673265842749728687}
   - component: {fileID: 8631284683917680632}
-  - component: {fileID: 7228882908109671584}
   - component: {fileID: 4004418933119250898}
   m_Layer: 0
   m_Name: SealTape
@@ -281,19 +280,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -1.1286851, y: -1.2617273, z: 1.2482419}
     m_Extent: {x: 0.19444168, y: 1.4585631, z: 1.0217776}
   m_DirtyAABB: 0
---- !u!65 &7228882908109671584
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8156184865622790816}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.651069, z: 1.6514486}
-  m_Center: {x: -1.13, y: -1.8344653, z: 1.0611748}
 --- !u!114 &4004418933119250898
 MonoBehaviour:
   m_ObjectHideFlags: 0
